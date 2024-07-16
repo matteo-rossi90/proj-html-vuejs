@@ -1,8 +1,10 @@
+
 <script>
 export default {
-    name:'Header'
+    name:'AppFooter'
 }
 </script>
+
 <template lang="">
     <div>
         

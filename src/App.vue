@@ -1,14 +1,14 @@
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
 import {store} from './store.js'
 
 
 export default {
   name:'App',
   components: {
-    Header,
-    Footer,
+    AppHeader,
+    AppFooter,
   },
   data (){
     return{
@@ -20,9 +20,12 @@ export default {
 </script>
 
 <template>
-<Header/>
+
+<AppHeader/>
+
 <main></main>
-<Footer/>
+
+<AppFooter/>
 </template>
 
 <style scoped>
