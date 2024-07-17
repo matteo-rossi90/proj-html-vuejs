@@ -12,6 +12,7 @@ export default {
     <section>
         <div class="container-fluid">
 
+            <!-- banner -->
             <div class="row">
                  <div class="col">
                     <div id="banner-contact" class="d-flex justify-content-center align-items-center">
@@ -20,16 +21,54 @@ export default {
                  </div>
             </div>
            
-            <div class="row container-fluid container-box">
-                <div class="col">
-                    <!-- <div class="box-contact"></div> -->
+            <!-- riferimenti per i contatti -->
+            <div class="row container-fluid container-box py-4 g-5">
+
+                <div class="col px-2">
+                    <div class="box-contact p-2 d-flex align-items-center">
+                        <div class="box-icon d-flex justify-content-center align-items-center p-3">
+                             <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <span>
+                            <div class="text p-3">
+                                <h4>CALL US</h4>
+                                <small>02 90 222 333</small>
+                            </div>
+                        </span>
+                    </div>
+                    
                 </div>
-                <div class="col">
-                    <!-- <div class="box-contact"></div> -->
+
+                <div class="col px-2">
+                    <div class="box-contact p-2 d-flex align-items-center">
+                        <div class="box-icon d-flex justify-content-center align-items-center p-3">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span>
+                            <div class="text p-3">
+                                <h4>EMAIL US</h4>
+                                <small>info@domain.com</small>
+                            </div>
+                        </span>
+                    </div>
+                    
                 </div>
-                <div class="col">
-                    <!-- <div class="box-contact"></div> -->
+
+                <div class="col px-2">
+                    <div class="box-contact p-2 d-flex align-items-center">
+                        <div class="box-icon d-flex justify-content-center align-items-center p-3">
+                             <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span>
+                            <div class="text p-3">
+                                <h4>POSITION US</h4>
+                                <small>3308 Fleming Street</small>
+                            </div>
+                        </span>
+                    </div>
+                    
                 </div>
+
             </div>
 
         </div>
@@ -38,9 +77,65 @@ export default {
 
     <!-- sezione relativa al form -->
     <section>
-        <div class="row container-fluid">
-            <div class="col-7"></div>
-            <div class="col-5"></div>
+        <div class="row container-fluid container-box my-5">
+
+            
+            <div class="col-7">
+
+                <!-- intestazione e paragrafo -->
+                <div class="py-4">
+                    <h2 class="my-3">GET IN TOUCH</h2>
+                    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <!-- parte del form -->
+                <form class="row pe-3">
+
+                    <!-- Nome -->
+                    <div class="col-md-6 pe-2 mb-3">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <!-- Cognome -->
+                    <div class="col-md-6 mb-3">
+                        <label for="inputLastName" class="form-label">Last name</label>
+                        <input type="email" class="form-control" id="inputLastName">
+                    </div>
+
+                    <!-- mail -->
+                    <div class="col-md-6 pe-2 mb-3">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <!-- telefono -->
+                    <div class="col-md-6 mb-3">
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="Phone" class="form-control" id="inputPhone">
+                    </div>
+
+                    <!-- messaggio di testo -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <!-- pulsante per l'invio delle informazioni -->
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn py-2 px-4 btn-send">
+                            <span>SEND MESSAGE</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- immagine -->
+            <div class="col-5">
+                <div id="box-image" class="ps-3">
+                    <img src="/imgs/assets/anime-contact.webp" alt="">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -73,30 +168,49 @@ export default {
 }
 
 .container-box{
-
-    .col{
-    // background-color: pink;
-    height: 100px;
-    border: 1px solid black;
-}
+    margin: 0 auto;
+    width: 80%;
 
 }
 
-// .box-contact{
-    // background-color: #F3F3F3;
-    // height: 100%;
-    // margin: 20px 10px;
-// }
+.box-contact{
+    background-color: $tertiary-color;
+    height: 100%;
+    border-radius: 5px;
 
+    .box-icon{
+        border-radius: 100%;
+        background-color: $primary-color;
+        height: 60px;
+        width: 60px;
 
-.col-7{
-    background-color: grey;
-    height: 500px;
+        i{
+            text-align:center;
+            font-size: 30px;
+            color: white;
+        }
+    }
 }
 
-.col-5{
-    background-color: rgb(0, 120, 212);
-    height: 500px;
+.btn-send{
+    background-color: $primary-color;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: $quaternary-color;
+    }
+}
+
+#box-image{
+    height: 100%;
+    width: 100%;
+
+    img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
 }
 
     
