@@ -7,7 +7,7 @@ export default {
 
 <template>
     <footer>
-        <div class="container ">
+        <div class="container">
             <div class="row justify-content-center pt-5  ">
                 <!-- footer links section -->
                 <div class="col-2 mt-5 mb-5">
@@ -106,7 +106,6 @@ export default {
 @use '../style/generals.scss' as *;
 @use 'src/style/partials/_variables.scss' as *;
 @use 'src/style/partials/_mixins.scss' as *;
-
 footer{
  background-color: $primary-color;
     form {
@@ -118,10 +117,14 @@ footer{
             li{
                 list-style: none;
                 line-height: 2rem;
+                a:hover{
+                    color: $quaternary-color;
+                }
             }
             a{
-                text-decoration: none;
+                text-decoration: none;     
             }
+           
             // color of links 
             h5, a, span{
                 color:$secondary-color;
