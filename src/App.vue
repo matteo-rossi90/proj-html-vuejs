@@ -4,6 +4,7 @@ import AppFooter from './components/AppFooter.vue'
 import AboutUs from './page/AboutUs.vue'
 import ContactUs from './page/ContactUs.vue'
 import {store} from './store.js'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 export default {
