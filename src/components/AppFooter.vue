@@ -109,7 +109,6 @@ export default {
 
 footer{
  background-color: $primary-color;
- height: 100%;
     form {
         gap: 1.2rem;
     }
@@ -126,6 +125,11 @@ footer{
             // color of links 
             h5, a, span{
                 color:$secondary-color;
+                font-family: Sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                font-style: normal;
+                text-decoration: none;
             }
             
             //styling subscription button
