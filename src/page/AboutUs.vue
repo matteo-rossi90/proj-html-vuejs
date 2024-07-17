@@ -9,7 +9,7 @@ export default {
 <div class="headerAboutUs d-flex justify-content-center align-items-center">About Us</div>
 <!-- content -->
 <div class="container">
-    <div>About Anime Tech</div>
+    <h3>About Anime Tech</h3>
     <!-- start improving -->
     <div class="d-flex d-flex justify-content-between pink">
         <div class="w-100">
