@@ -52,9 +52,12 @@ export default {
                             <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
                             <!-- hover -->
                             <div class= "hoverImg">
-                               
-                                  
-                                
+                                <div class="d-flex  justify-content-between  align-items-center w-100 px-5">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
                             </div>
                         </div>
                         <h4 class="fw-bold">Cristina A.</h4>
@@ -63,98 +66,135 @@ export default {
 
 
                     <div class="col">
-                    <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
-                    <h4 class="fw-bold">Ennio B.</h4>
-                    <div class="fw-bold red">Founder & Ceo</div>
+                        <div class=boxHover>
+                            <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
+                            <!-- hover -->
+                            <div class= "hoverImg">
+                                <div class="d-flex  justify-content-between  align-items-center w-100 px-5">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Ennio B.</h4>
+                        <div class="fw-bold red">Founder & Ceo</div>
                     </div>
+
+
                     <div class="col">
-                    <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
-                    <h4 class="fw-bold">Elona H.</h4>
-                    <div class="fw-bold red">Founder & Ceo</div>
+                        <div class=boxHover>
+                            <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
+                            <!-- hover -->
+                            <div class= "hoverImg">
+                                <div class="d-flex  justify-content-between  align-items-center w-100 px-5">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Elona H.</h4>
+                        <div class="fw-bold red">Founder & Ceo</div>
                     </div>
+
+
                     <div class="col">
-                    <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
-                    <h4 class="fw-bold">Matteo R.</h4>
-                    <div class="fw-bold red">Founder & Ceo</div>
+                        <div class=boxHover>
+                            <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
+                            <!-- hover -->
+                            <div class= "hoverImg">
+                                <div class="white d-flex  justify-content-between  align-items-center w-100 px-5">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Matteo R.</h4>
+                        <div class="fw-bold red">Founder & Ceo</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- FAQ -->
-    <h1 class= "text-center fw-bold">FAQ</h1>
-    <div class="container-fluid text-center orange">
-      <div class="row row-cols-2">
-        <!-- accordeon 1 -->
-        <div class="col">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        A Frequently Asked Question Surrounding Your Service
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        <h1 class= "text-center fw-bold">FAQ</h1>
+        <div class="container-fluid text-center orange">
+            <div class="row row-cols-2">
+                <!-- accordeon 1 -->
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                A Frequently Asked Question Surrounding Your Service
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                A Frequently Asked Question Surrounding Your Service
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                A Frequently Asked Question Surrounding Your Service
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        A Frequently Asked Question Surrounding Your Service
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                <!-- accordeon 2 -->
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                A Frequently Asked Question Surrounding Your Service
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                A Frequently Asked Question Surrounding Your Service
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                A Frequently Asked Question Surrounding Your Service
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        A Frequently Asked Question Surrounding Your Service
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
-                    </div>
-                </div>
             </div>
         </div>
-        <!-- accordeon 2 -->
-        <div class="col">
-             <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        A Frequently Asked Question Surrounding Your Service
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        A Frequently Asked Question Surrounding Your Service
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        A Frequently Asked Question Surrounding Your Service
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
     </div>
 </div>
 </template>
@@ -211,7 +251,7 @@ img.member{
     background-color: #bebebe7a;
     position: absolute;
     border-radius: 50%;
-    transition: bottom 0.3s ease;
+    transition: 3s ease;
 }
 
 .boxHover:hover .hoverImg {
