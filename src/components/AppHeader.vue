@@ -29,6 +29,17 @@ export default {
             </div>
             <div class="offset-1"></div>
         </section>
+
+        <section id="banner" class="container-fluid row align-items-center">
+            <div class="offset-1 col-4">
+                <a href="#">
+                    <img src="/imgs/assets/anime-logo.webp" alt="logo">
+                </a>
+            </div>
+            <div class="col-6 text-end">
+                <img src="/imgs/assets/header-banner.webp" alt="adv">
+            </div>
+        </section>
     </header>
 </template>
 
@@ -69,6 +80,18 @@ export default {
                 }
             }
 
+        }
+
+        #banner{
+            margin: 20px 0;
+
+            div:first-child img{
+                width: 50%;
+            }
+
+            img{
+                border-radius: 5px;
+            }    
         }
 
     }
