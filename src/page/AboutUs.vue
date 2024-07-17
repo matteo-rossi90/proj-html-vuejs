@@ -6,20 +6,21 @@ export default {
 
 <template>
 <!-- header -->
-<div class="headerAboutUs d-flex justify-content-center align-items-center"><h3>ABOUT US</h3></div>
+<div class="headerAboutUs d-flex justify-content-center align-items-center"><h3 class="fw-bold white">ABOUT US</h3></div>
 <!-- content -->
 <div class="container py-5">
-    <h3>ABOUT ANIME TECH</h3>
+    <h3 class="fw-bold">ABOUT ANIME TECH</h3>
     <!-- start improving -->
     <div class="d-flex d-flex justify-content-between">
         <div class="w-100">
-            <h1>START IMPROVING</h1> 
-            <h1>YOUR BUSSINESS TODAY</h1>
+            <h1 class="fw-bold">START IMPROVING</h1> 
+            <h1 class="fw-bold red">YOUR BUSSINESS TODAY!</h1>
         </div>
         <div class="w-100">
             <span>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt, vitae assumenda autem molestiae tempora praesentium veritatis. Culpa soluta sunt voluptatem in amet veniam est, eos odit quia provident officiis.<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt, vitae assumenda autem molestiae tempora praesentium veritatis. Culpa soluta sunt voluptatem in amet veniam est, eos odit quia provident officiis
             </span>
         </div>
     </div>
@@ -28,47 +29,59 @@ export default {
     
     <div class="d-flex d-flex justify-content-between px">
             <div class="w-100">
-                <h1>OUR MISSION</h1> 
-                <h1>VISION</h1>
+                <h1 class="fw-bold">OUR MISSION</h1> 
+                <h1 class="fw-bold red">VISION</h1>
                 <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt, vitae assumenda autem molestiae tempora praesentium veritatis. Culpa soluta sunt voluptatem in amet veniam est, eos odit quia provident officiis.<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt, vitae assumenda autem molestiae tempora praesentium veritatis. Culpa soluta sunt voluptatem in amet veniam est, eos odit quia provident officiis.
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 </p>
             </div>
                 <img  src="../../public/imgs/assets/anime-contact.webp" alt="anime contact">
     </div>
    
     <!-- our team -->
-<div class="container  d-flex flex-column py-5 gap-4">
-    <h1 class= "text-center">OUR TEAM</h1>
-    <div class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        <div class="container-fluid text-center violet">
-            <div class="row">
-                <div class="col">
-                <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
-                <h4>David Anderson</h4>
-                <div>Founder & Ceo</div>
-                </div>
-                <div class="col">
-                <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
-                <h4>David Anderson</h4>
-                <div>Founder & Ceo</div>
-                </div>
-                <div class="col">
-                <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
-                <h4>David Anderson</h4>
-                <div>Founder & Ceo</div>
-                </div>
-                <div class="col">
-                <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
-                <h4>David Anderson</h4>
-                <div>Founder & Ceo</div>
+    <div class="container  d-flex flex-column py-5 gap-4">
+        <h1 class= "text-center fw-bold">OUR TEAM</h1>
+        <div class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            <div class="container-fluid text-center violet">
+                <div class="row">
+
+                    <div class="col">
+                        <div class=boxHover>
+                            <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
+                            <!-- hover -->
+                            <div class= "hoverImg">
+                               
+                                  
+                                
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Cristina A.</h4>
+                        <div class="fw-bold red">Founder & Ceo</div>
+                    </div>
+
+
+                    <div class="col">
+                    <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
+                    <h4 class="fw-bold">Ennio B.</h4>
+                    <div class="fw-bold red">Founder & Ceo</div>
+                    </div>
+                    <div class="col">
+                    <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
+                    <h4 class="fw-bold">Elona H.</h4>
+                    <div class="fw-bold red">Founder & Ceo</div>
+                    </div>
+                    <div class="col">
+                    <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
+                    <h4 class="fw-bold">Matteo R.</h4>
+                    <div class="fw-bold red">Founder & Ceo</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- FAQ -->
-    <h1 class= "text-center">FAQ</h1>
+    <h1 class= "text-center fw-bold">FAQ</h1>
     <div class="container-fluid text-center orange">
       <div class="row row-cols-2">
         <!-- accordeon 1 -->
@@ -76,7 +89,7 @@ export default {
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         A Frequently Asked Question Surrounding Your Service
                     </button>
                     </h2>
@@ -86,7 +99,7 @@ export default {
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         A Frequently Asked Question Surrounding Your Service
                     </button>
                     </h2>
@@ -96,7 +109,7 @@ export default {
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         A Frequently Asked Question Surrounding Your Service
                     </button>
                     </h2>
@@ -111,7 +124,7 @@ export default {
              <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         A Frequently Asked Question Surrounding Your Service
                     </button>
                     </h2>
@@ -121,7 +134,7 @@ export default {
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         A Frequently Asked Question Surrounding Your Service
                     </button>
                     </h2>
@@ -131,7 +144,7 @@ export default {
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed fw-bold red" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         A Frequently Asked Question Surrounding Your Service
                     </button>
                     </h2>
@@ -176,5 +189,33 @@ img {
 
 img.member{
     width:100%;
+    height: 15rem;
 }
+
+.red {
+    color:#bf1d2e
+}
+
+.white {
+    color:white;
+}
+
+// hover
+.boxHover{
+    position:relative,
+}
+.hoverImg {
+    width: 100%;
+    height: 15rem;
+    display:none;
+    background-color: #bebebe7a;
+    position: absolute;
+    border-radius: 50%;
+    transition: bottom 0.3s ease;
+}
+
+.boxHover:hover .hoverImg {
+            display:flex;
+            bottom: 0; 
+        }
 </style>

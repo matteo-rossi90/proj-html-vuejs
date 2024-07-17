@@ -1,7 +1,83 @@
 
 <script>
 export default {
-    name:'AppFooter'
+    name:'AppFooter',
+    data(){
+        return{
+            getStarted: [
+                {
+                    text: 'Resources',
+                    url: '#'
+                },
+                {
+                    text: 'Tutorials',
+                    url: '#'
+                }, 
+                {
+                    text: 'Examples',
+                    url: '#'
+                },
+                {
+                    text: 'Docs',
+                    url: '#'
+                },
+            ],
+            about: [
+                {
+                    text: 'Stories',
+                    url: '#'
+                },
+                {
+                    text: 'Community',
+                    url: '#'
+                }, 
+                {
+                    text: 'Blog',
+                    url: '#'
+                },
+                {
+                    text: 'Brand Assets',
+                    url: '#'
+                },
+            ],
+            features: [
+                {
+                    text: 'Overview',
+                    url: '#'
+                },
+                {
+                    text: 'Design',
+                    url: '#'
+                }, 
+                {
+                    text: 'Code',
+                    url: '#'
+                },
+                {
+                    text: 'Collaborate',
+                    url: '#'
+                },
+                ],
+                quickLinks: [
+                {
+                    text: 'Stories',
+                    url: '#'
+                },
+                {
+                    text: 'Communitylog',
+                    url: '#'
+                }, 
+                {
+                    text: 'Blog',
+                    url: '#'
+                },
+                {
+                    text: 'Brand Assets',
+                    url: '#'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -13,68 +89,32 @@ export default {
                 <div class="col-2 mt-5 mb-5">
                     <h5><a href="#">GET STARTED </a></h5>
                     <ul>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li> 
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
+                        <li v-for="(link, index) in getStarted" :key="index">
+                            <a :href="link.url">{{link.text}}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-2 mt-5 mb-5">
                     <h5><a href="#"> ABOUT </a></h5>  
                     <ul>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li> 
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
+                        <li v-for="(link, index) in about" :key="index">
+                            <a :href="link.url">{{link.text}}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-2 mt-5 mb-5">
                     <h5><a href="#"> FEATURES </a></h5>
                     <ul>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li> 
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
+                        <li v-for="(link, index) in features" :key="index">
+                            <a :href="link.url">{{link.text}}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-2 mt-5 mb-5">
                     <h5><a href="#"> QUICK LINKS</a></h5>
                     <ul>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li> 
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
+                        <li v-for="(link, index) in quickLinks" :key="index">
+                            <a :href="link.url">{{link.text}}</a>
                         </li>
                     </ul>
                 </div>
@@ -129,12 +169,11 @@ footer{
             h5, a, span{
                 color:$secondary-color;
                 font-family: Sans-serif;
-                font-size: 15px;
                 font-weight: 600;
                 font-style: normal;
                 text-decoration: none;
             }
-            
+
             //styling subscription button
             .subs_bt{
                 width: 100%;
