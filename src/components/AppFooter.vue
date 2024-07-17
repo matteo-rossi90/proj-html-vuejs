@@ -18,7 +18,7 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../style/generals.scss' as *;
 @use 'src/style/partials/_variables.scss' as *;
 @use 'src/style/partials/_mixins.scss' as *;
