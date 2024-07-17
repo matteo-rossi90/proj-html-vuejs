@@ -1,6 +1,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
+import Home from './page/Home.vue'
 import AboutUs from './page/AboutUs.vue'
 import ContactUs from './page/ContactUs.vue'
 import {store} from './store.js'
@@ -13,7 +14,8 @@ export default {
     AppHeader,
     AppFooter,
     AboutUs,
-    ContactUs
+    ContactUs,
+    Home
   },
   data (){
     return{
@@ -31,6 +33,7 @@ export default {
 <main>
   <AboutUs/>
   <ContactUs/>
+  <Home/>
 </main>
 
 <AppFooter/>
