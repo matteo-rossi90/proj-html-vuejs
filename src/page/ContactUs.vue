@@ -11,17 +11,15 @@ export default {
     <!-- sezione relativa al banner e ai contatti -->
     <section>
         <div class="container-fluid">
-            
-            <div class="row">
-                <div class="col" id="banner-contact">
-            </div>
-            
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-            </div>
 
+            <div class="row">
+                 <div class="col" id="banner-contact"></div>
+            </div>
+           
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
             </div>
 
         </div>
@@ -30,7 +28,7 @@ export default {
     
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../style/generals.scss' as *;
 @use '../style/partials/mixins' as *;
 @use '../style/partials/variables' as *;
