@@ -110,25 +110,27 @@ export default {
 </section>
 
 <section id="portfolio2">
+
+    <!-- portfolio immagini -->
     <div class="row container-box py-4">
-        <div class="col-3 py-2">
+        <div class="col-3 p-0">
             <div class="box-image-col">
                 <img src="/imgs/assets/anime-fashion.webp" alt="">
             </div>
-            <div class="box-image-col">
+            <div class="box-image-col pt-2">
                 <img src="/imgs/assets/anime-fashion.webp" alt="">
             </div>
         </div>
-        <div class="col py-2">
+        <div class="col">
             <div id="box-image-center">
                 <img src="/imgs/assets/best-places.webp" alt="">
             </div>
         </div>
-        <div class="col-3 py-2">
+        <div class="col-3 p-0">
             <div class="box-image-col">
                 <img src="/imgs/assets/anime-fashion.webp" alt="">
             </div>
-            <div class="box-image-col">
+            <div class="box-image-col pt-2">
                 <img src="/imgs/assets/anime-fashion.webp" alt="">
             </div>
         </div>
@@ -208,25 +210,18 @@ export default {
 
     }
 
-    .col-3,
-    .col{
-        background-color: green;
-        border: 1px dashed white;
-
-    }
-
     #box-image-center{
         width: 100%;
         height: 100%;
 
         img{
+            height: 100%;
             width: 100%;
             border-radius: 5px;
         }
     }
 
     .box-image-col{
-        height: calc(100% / 2);
 
         img{
             max-width: 100%;
