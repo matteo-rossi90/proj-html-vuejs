@@ -8,10 +8,10 @@ export default {
 <!-- header -->
 <div class="headerAboutUs d-flex justify-content-center align-items-center">About Us</div>
 <!-- content -->
-<div class="container">
+<div class="container py-5">
     <h3>About Anime Tech</h3>
     <!-- start improving -->
-    <div class="d-flex d-flex justify-content-between pink">
+    <div class="d-flex d-flex justify-content-between">
         <div class="w-100">
             <h1>START IMPROVING</h1> 
             <h1>YOUR BUSSINESS TODAY</h1>
@@ -23,19 +23,23 @@ export default {
             </span>
         </div>
     </div>
+</div>
     <!-- our mision -->
-    <div class="d-flex d-flex justify-content-between green">
-        <div class="w-100">
-            <h1>OUR MISSION</h1> 
-            <h1>VISION</h1>
-            <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt, vitae assumenda autem molestiae tempora praesentium veritatis. Culpa soluta sunt voluptatem in amet veniam est, eos odit quia provident officiis.<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
-            <img  src="../../public/imgs/assets/anime-contact.webp" alt="anime contact">
+    
+    <div class="d-flex d-flex justify-content-between px">
+            <div class="w-100">
+                <h1>OUR MISSION</h1> 
+                <h1>VISION</h1>
+                <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt, vitae assumenda autem molestiae tempora praesentium veritatis. Culpa soluta sunt voluptatem in amet veniam est, eos odit quia provident officiis.<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+                <img  src="../../public/imgs/assets/anime-contact.webp" alt="anime contact">
     </div>
+   
     <!-- our team -->
+<div class="container  d-flex flex-column py-5 gap-4">
     <h1 class= "text-center">OUR TEAM</h1>
     <div class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         <div class="container-fluid text-center violet">
@@ -143,26 +147,14 @@ export default {
 </template>
 
 <style  lang="scss" scoped>
-
-// debug
-.pink {
-    background-color: pink;
+.px {
+    background-color: #eeeeee;
+    padding-right: 13rem;
+    padding-left: 13rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-//debug
-.green {
-    background-color: greenyellow;
-}
-
-//debug
-.violet {
-    background-color: rgb(177, 113, 175);
-}
-
-//debug
-.orange {
-    background-color: orange;
-}
 .headerAboutUs {
     // background-image: url(../../public/imgs/assets/300x250.webp);
     // debug
