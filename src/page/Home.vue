@@ -138,10 +138,96 @@ export default {
 </section>
 
 <section id="lifestyle3"></section>
-
-<section id="featured">
-
+<!-- cri seccion -->
+<!-- <section  class="mb-5 bg-white">
+            <div class="d-flex justify-content-center py-5">
+                <img class="rounded" src="/imgs/assets/header-banner.webp" alt="adv">
+            </div>
+</section> -->
+<section id="featured" class="d-flex justify-content-center gap-3 flex-wrap">
+    <!-- card 1 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/best-places.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 2 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/music-love.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 3 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/anime-fashion.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 4 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/winter.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 5 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/photographers-mistakes.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 6 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/ideas-anime.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 7 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/visit-france.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 8 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/travel-alone.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 9 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/success-story.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
 </section>
+<!-- finish cri seccion -->
 
 <section id="yt-player" class="my-5">
     <div class="container">
@@ -240,9 +326,13 @@ export default {
 
 }
 
+//cri section
 #featured4{
-
+.bg-white{
+    background-color: #F3F3F3;
 }
+}
+//finish cri section
 
 #yt-player{
     .player-card{
