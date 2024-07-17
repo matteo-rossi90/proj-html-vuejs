@@ -13,13 +13,23 @@ export default {
         <div class="container-fluid">
 
             <div class="row">
-                 <div class="col" id="banner-contact"></div>
+                 <div class="col">
+                    <div id="banner-contact" class="d-flex justify-content-center align-items-center">
+                        <h2>About us</h2>
+                    </div>
+                 </div>
             </div>
            
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
+            <div class="row container-fluid container-box">
+                <div class="col">
+                    <!-- <div class="box-contact"></div> -->
+                </div>
+                <div class="col">
+                    <!-- <div class="box-contact"></div> -->
+                </div>
+                <div class="col">
+                    <!-- <div class="box-contact"></div> -->
+                </div>
             </div>
 
         </div>
@@ -50,14 +60,34 @@ export default {
 
 #banner-contact{
     height: 200px;
-    background-color: yellow;
+    background-image: url('/imgs/assets/300x250.webp');
+    background-color: rgba(0,0,0,0.6);
+    background-size: 100%, cover;
+    background-position-x: center;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+
+    h2{
+        color: white;
+    }
 }
 
-.col-4{
-    background-color: pink;
+.container-box{
+
+    .col{
+    // background-color: pink;
     height: 100px;
     border: 1px solid black;
 }
+
+}
+
+// .box-contact{
+    // background-color: #F3F3F3;
+    // height: 100%;
+    // margin: 20px 10px;
+// }
+
 
 .col-7{
     background-color: grey;
