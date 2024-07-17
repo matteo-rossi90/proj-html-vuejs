@@ -67,7 +67,7 @@ export default {
     <!-- <h1 class= "text-center">FAQ</h1>
     <div class="container-fluid"> -->
 
-    </div>
+
 </div>
 </template>
 
