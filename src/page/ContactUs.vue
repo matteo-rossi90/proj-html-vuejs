@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <h1>Parte Contact Us</h1>
+    <h1>Parte Contact Us, prova</h1>
     
 </template>
 

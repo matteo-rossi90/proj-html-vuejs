@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import AboutUs from './page/AboutUs.vue'
+import ContactUs from './page/ContactUs.vue'
 import {store} from './store.js'
 
 
@@ -11,6 +12,7 @@ export default {
     AppHeader,
     AppFooter,
     AboutUs,
+    ContactUs
   },
   data (){
     return{
@@ -27,6 +29,7 @@ export default {
 
 <main>
   <AboutUs/>
+  <ContactUs/>
 </main>
 
 <AppFooter/>
