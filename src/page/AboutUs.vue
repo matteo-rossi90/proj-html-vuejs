@@ -6,10 +6,10 @@ export default {
 
 <template>
 <!-- header -->
-<div class="headerAboutUs d-flex justify-content-center align-items-center">About Us</div>
+<div class="headerAboutUs d-flex justify-content-center align-items-center"><h3>ABOUT US</h3></div>
 <!-- content -->
 <div class="container py-5">
-    <h3>About Anime Tech</h3>
+    <h3>ABOUT ANIME TECH</h3>
     <!-- start improving -->
     <div class="d-flex d-flex justify-content-between">
         <div class="w-100">
@@ -156,11 +156,13 @@ export default {
 }
 
 .headerAboutUs {
-    // background-image: url(../../public/imgs/assets/300x250.webp);
-    // debug
+    background-image: url(../../public/imgs/assets/300x250.webp);
     height: 17rem;
     width: 100%;
-    background-color: #93232ee3;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 53%;
+    background-repeat: no-repeat;
 }
 
 .container{
