@@ -20,7 +20,7 @@ export default{
             <div class="col-8 px-0 text-end">
                 <!-- video 1 -->
                  <div class="">
-                    <iframe width="840" height="550" :src="store.videoArray[store.activeVideo].video" title="Eternal Cultivation Anime Episode :) 113,114 | Anime Land Explain In Hindi." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="840" height="550" :src="store.videoArray[store.activeVideo].video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                  </div>
             </div>
             <!-- sexione lista video -->
