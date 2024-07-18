@@ -144,15 +144,17 @@ export default{
         font-size: 30px;
         background-color: $primary-color;
         border-radius: 50%;
+        &:hover{
+            background-color: $secondary-color;
+            color: $primary-color ;
+        }
     }
         #prev_cursor,  #next_cursor{
             color: $secondary-color;
             position: absolute;
             top: 40%;
             left: 0;
-                &:hover{
-
-                }
+                
         }
         #next_cursor{
             left: 95%;
