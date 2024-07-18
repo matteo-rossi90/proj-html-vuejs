@@ -5,7 +5,8 @@ export default {
     components: {
         YouTubePlayer,
         Carosello1,
-        Portfolio
+        Portfolio,
+        lifestyle3,
     }
 };
 
@@ -15,61 +16,18 @@ import Carosello1 from '../components/Carosello1.vue';
 
 import Portfolio from '../components/Portfolio.vue';
 
+import lifestyle3 from '../components/lifestyle3.vue';
+
 </script>
 
 <template>
 <section id="carosello1">
    <Carosello1/>
 </section>
-
-
-<section id="lifestyle3"></section>
-<!-- cri seccion -->
-<div class="angleBox">
-    <div class="angle">&#8249;</div>
-    <div class="angle">&#8250;</div>
-</div>
-<section id="featured" class="d-flex justify-content-center gap-3">
-    <!-- card 1 -->
-    <div class="card">
-        <img src="../../public/imgs/assets/best-places.webp" class="card-img-top" alt="...">
-        <div class="">
-            <h5 class="">Places for a Road Trip</h5>
-            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
-            <a href="#" class="">Read More</a>
-        </div>
-    </div>
-    <!-- card 2 -->
-    <div class="card">
-        <img src="../../public/imgs/assets/music-love.webp" class="card-img-top" alt="...">
-        <div class="">
-            <h5 class="">Places for a Road Trip</h5>
-            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
-            <a href="#" class="">Read More</a>
-        </div>
-    </div>
-    <!-- card 3 -->
-   <div class="card">
-        <img src="../../public/imgs/assets/anime-fashion.webp" class="card-img-top" alt="...">
-        <div class="">
-            <h5 class="">Places for a Road Trip</h5>
-            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
-            <a href="#" class="">Read More</a>
-        </div>
-    </div>
-    <!-- card 4 -->
-    <div class="card">
-        <img src="../../public/imgs/assets/winter.webp" class="card-img-top" alt="...">
-        <div class="">
-            <h5 class="">Places for a Road Trip</h5>
-            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
-            <a href="#" class="">Read More</a>
-        </div>
-    </div>
-</section>
-<!-- finish cri seccion -->
-
     <Portfolio/>
+<section id="lifestyle3">
+    <lifestyle3/>
+</section>
     <YouTubePlayer />
 </template>
 
@@ -80,31 +38,6 @@ import Portfolio from '../components/Portfolio.vue';
 #carosello1{
 
 }
-
-#lifestyle3{
-
-}
-
-//cri section
-//featured4
-.angleBox {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.angle {
-    font-size: 25px;
-    background-color: #2d2b2b;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    text-align: center;
-    font-weight: bolder;
-    color: white;
-}
-    
-
-//finish cri section
 
 #yt-player{
     .player-card{
