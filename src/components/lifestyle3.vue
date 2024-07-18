@@ -1,6 +1,10 @@
 <script>
-export default{
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
+import '@splidejs/vue-splide/css';
+
+export default {
     name:'lifestyle3',
+    components: {Splide, SplideSlide, SplideTrack},
     data() {
         return {
             currentIndex: 0,
@@ -53,23 +57,15 @@ export default{
                     text: 'Money money money money money.',
                 }
             ],
-        }
-    },
-     //DEBO HACER LA LOGICA DEL CARRUSEL 
-    methods: {
-        nextImage() {
-            console.log('hey');
-            if (this.currentIndex > this.slides.length - 1) {
-                this.currentIndex++
-            }
-        },
-
-        prevImage() {
-            if (this.currentIndex <= 0) {
-                this.currentIndex = this.slides.length - 1;
-                this.currentIndex--;
-                
-            }
+            splideOptions: {
+                type: 'loop',
+                perPage: 3,
+                gap: '1rem',
+                perMove: 1,
+                pagination: false,
+                arrows: false,
+                autoplay: true,
+            },
         }
     }
 };
@@ -81,27 +77,31 @@ export default{
         <!-- bottoni -->
         <span><h3 class="featuredTitle">FEATURED POSTS</h3></span>
         <div class="angleBox">
-            <div class="angle" @click="prevImage">&#8249;</div>
-            <div class="angle" @click="nextImage">&#8250;</div>
+            <button class="angle" @click="this.$refs.carousel.splide.go('<')">
+                <
+            </button>
+            <button class="angle" @click="this.$refs.carousel.splide.go('>')">
+                >
+            </button>
         </div>
         <!-- carroselo -->
-        <div class= "slidesBox d-flex gap-3">
-            <div class="cardBox position-relative" v-for="(slide, index) in slides" :key="index">
+        <Splide ref="carousel" :options="splideOptions" class= "slidesBox d-flex gap-3">
+            <SplideSlide class="cardBox position-relative" v-for="(slide, index) in slides" :key="index">
                 <!-- <div class="position-relative"> -->
                 <img :src="slide.image" :alt="slide.title">
                 <!-- </div> -->
                 <div class="buttonBox d-flex justify-content-between gap-3">
-                   <button type="button" class="btn btn-secondary btn-sm">Lifestyle</button>
-                   <button type="button" class="btn btn-primary btn-sm">Stories</button>
+                <button type="button" class="btn btn-secondary btn-sm">Lifestyle</button>
+                <button type="button" class="btn btn-primary btn-sm">Stories</button>
                 </div>
-                    <div class="captionBox d-flex justfy-content-center flex-column align-items-center gap-2 p-3">
-                        <h3 class="size-12">{{ slide.title }}</h3>
-                        <p>{{ slide.data }}</p>
-                        <p>{{ slide.text }}</p>
-                    </div>
-                    <button type="button" class="btn btn-danger">Read More</button>
-            </div>
-        </div>
+                <div class="captionBox d-flex justfy-content-center flex-column align-items-center gap-2 p-3">
+                    <h3 class="size-12">{{ slide.title }}</h3>
+                    <p>{{ slide.data }}</p>
+                    <p>{{ slide.text }}</p>
+                </div>
+                <button type="button" class="btn btn-danger">Read More</button>
+            </SplideSlide>
+        </Splide>
     </section>
 </template>
 
