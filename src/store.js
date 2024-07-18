@@ -96,4 +96,37 @@ export const store = reactive({
 
 
     ],
+    //bottom cards Array
+    bottomCards:[
+        {
+            text: 'FASHION',
+            image: '/imgs/assets/anime-fashion.webp',
+            post: '3 posts'
+        },
+        {
+            text: 'CULTURE',
+            image: '/imgs/assets/success-story.webp',
+            post: '3 posts'
+        },
+        {
+            text: 'FOOD',
+            image: '/imgs/assets/healthy-foods.webp',
+            post: '3 posts'
+        },
+        {
+            text: 'LIFESTYLE',
+            image: '/imgs/assets/visit-france.webp',
+            post: '4 posts'
+        },
+        {
+            text: 'STORIES',
+            image: '/imgs/assets/travel-alone.webp',
+            post: '4 posts'
+        },
+        {
+            text: 'TRAVEL',
+            image: '/imgs/assets/best-places.webp',
+            post: '3 posts'
+        }
+    ]
 });
