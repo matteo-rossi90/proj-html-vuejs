@@ -55,24 +55,23 @@ export default{
             ],
         }
     },
-     //DEBO HACER LA LOGICA DEL MALDITO CARRUSEL :V 
+     //DEBO HACER LA LOGICA DEL CARRUSEL 
     methods: {
-        // nextImage() {
-        //     console.log('hey');
-        //     if (this.currentIndex > this.slides.length - 1) {
-        //         this.currentIndex++
-        //     }
-        // },
+        nextImage() {
+            console.log('hey');
+            if (this.currentIndex > this.slides.length - 1) {
+                this.currentIndex++
+            }
+        },
 
-        // prevImage() {
-        //     if (this.currentIndex <= 0) {
-        //         this.currentIndex = this.slides.length - 1;
-        //         this.currentIndex--;
+        prevImage() {
+            if (this.currentIndex <= 0) {
+                this.currentIndex = this.slides.length - 1;
+                this.currentIndex--;
                 
-        //     }
-        // }
+            }
+        }
     }
-
 };
 
 </script>
@@ -80,25 +79,45 @@ export default{
 <template>
     <section id="featured" >
         <!-- bottoni -->
+        <span><h3 class="featuredTitle">FEATURED POSTS</h3></span>
         <div class="angleBox">
             <div class="angle" @click="prevImage">&#8249;</div>
             <div class="angle" @click="nextImage">&#8250;</div>
         </div>
         <!-- carroselo -->
         <div class= "slidesBox d-flex gap-3">
-            <div class="cardBox" v-for="(slide, index) in slides" :key="index">
+            <div class="cardBox position-relative" v-for="(slide, index) in slides" :key="index">
+                <!-- <div class="position-relative"> -->
                 <img :src="slide.image" :alt="slide.title">
-                <div class="d-flex justfy-content-center flex-column align-items-center gap-2 p-3">
-                    <h3 class="size-12">{{ slide.title }}</h3>
-                    <p>{{ slide.data }}</p>
-                    <p>{{ slide.text }}</p>
+                <!-- </div> -->
+                <div class="buttonBox d-flex justify-content-between gap-3">
+                   <button type="button" class="btn btn-secondary btn-sm">Lifestyle</button>
+                   <button type="button" class="btn btn-primary btn-sm">Stories</button>
                 </div>
+                    <div class="captionBox d-flex justfy-content-center flex-column align-items-center gap-2 p-3">
+                        <h3 class="size-12">{{ slide.title }}</h3>
+                        <p>{{ slide.data }}</p>
+                        <p>{{ slide.text }}</p>
+                    </div>
+                    <button type="button" class="btn btn-danger">Read More</button>
             </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
+
+.featuredTitle {
+    width: 82%;
+    margin: 0 auto;
+    font-weight: bolder;
+}
+
+.buttonBox{
+    position:absolute;
+    margin: 0 8rem;
+    top: 1rem;
+}
 
 .angleBox {
     display: flex;
@@ -108,7 +127,6 @@ export default{
     gap: 1rem;
     padding-bottom: 1rem;
 }
-
 
 .angle {
     font-size: 25px;
@@ -134,7 +152,7 @@ export default{
     border-radius: 8px;
     text-align: center;
     width: 25rem;
-    height: 32rem;
+    height: 34rem;
 }
 
 img {
@@ -142,6 +160,9 @@ img {
     width: 25rem;
 }
 
+.captionBox {
+    min-height: 14.5rem;
+}
 // font size 
 .size-12{
     font-size: 18px;

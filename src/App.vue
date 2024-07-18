@@ -10,13 +10,14 @@ export default {
   components: {
     AppHeader,
     AppFooter,
+   
   },
   data (){
     return{
       store
     }
   }
-}
+} 
 
 </script>
 
