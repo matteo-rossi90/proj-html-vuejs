@@ -3,11 +3,16 @@ export default {
     name:'Home',
     components: {
         YouTubePlayer,
+        Carosello1,
         Portfolio
     }
 };
 
 import YouTubePlayer from '../components/YouTubePlayer.vue';
+
+import Carosello1 from '../components/Carosello1.vue';
+
+import Portfolio from '../components/Portfolio.vue';
 
 </script>
 
