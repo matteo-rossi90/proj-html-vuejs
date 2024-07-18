@@ -37,8 +37,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
                     <img src="/imgs/assets/anime-logo.webp" alt="logo">
                 </a>
             </div>
-            <div class="col-6 text-end">
-                <img style="width: 54.5rem;" id="headerBanner" src="/imgs/assets/header-banner.webp" alt="adv">
+            <div class="col-6">
+                <img id="headerBanner" src="/imgs/assets/header-banner.webp" alt="adv">
             </div>
         </section>
 
@@ -106,22 +106,22 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
                 <ul class="col-8 text-center">
                     <li>
-                        <a href="#">
+                        <router-link :to="{name: 'home'}">
                             <i class="fa-solid fa-house-chimney"></i>
                             home
-                        </a>
+                        </router-link>
                     </li>
                     <li>
-                        <a href="#">
+                        <router-link :to="{name: 'about'}">
                             <i class="fa-solid fa-user"></i>
                             about-us
-                        </a>
+                        </router-link>
                     </li>
                     <li>
-                        <a href="#">
+                        <router-link :to="{name: 'contact'}">
                             <i class="fa-solid fa-envelope"></i>
                             contact-us
-                        </a>
+                        </router-link>
                     </li>
                 </ul>
 
@@ -182,10 +182,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
             div:first-child img{
                 width: 50%;
+                height: 100%;
             }
 
             img{
                 border-radius: 5px;
+                width: 100%;
+                height: 80px;
             }    
         }
 

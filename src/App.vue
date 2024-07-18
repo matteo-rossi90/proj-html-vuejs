@@ -1,9 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
-import Home from './page/Home.vue'
-import AboutUs from './page/AboutUs.vue'
-import ContactUs from './page/ContactUs.vue'
 import {store} from './store.js'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -13,9 +10,6 @@ export default {
   components: {
     AppHeader,
     AppFooter,
-    AboutUs,
-    ContactUs,
-    Home
   },
   data (){
     return{
@@ -30,11 +24,7 @@ export default {
 
 <AppHeader/>
 
-<main>
-  <AboutUs/>
-  <ContactUs/>
-  <Home/>
-</main>
+<router-view></router-view>
 
 <AppFooter/>
 </template>
