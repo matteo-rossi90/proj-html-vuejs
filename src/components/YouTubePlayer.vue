@@ -139,6 +139,7 @@ export default{
 
     #video-list{
         height: 550px;
+        width: 400px;
     }
 }
 
