@@ -55,7 +55,7 @@ export default{
             ],
         }
     },
-//DEBO HACER LA LOGICA DEL MALDITO CARRUSEL :V 
+     //DEBO HACER LA LOGICA DEL MALDITO CARRUSEL :V 
     methods: {
         // nextImage() {
         //     console.log('hey');
@@ -72,6 +72,7 @@ export default{
         //     }
         // }
     }
+
 };
 
 </script>
@@ -85,11 +86,13 @@ export default{
         </div>
         <!-- carroselo -->
         <div class= "slidesBox d-flex gap-3">
-            <div v-for="(slide, index) in slides" :key="index">
+            <div class="cardBox" v-for="(slide, index) in slides" :key="index">
                 <img :src="slide.image" :alt="slide.title">
-                <h3>{{ slide.title }}</h3>
-                <p>{{ slide.data }}</p>
-                <p>{{ slide.text }}</p>
+                <div class="d-flex justfy-content-center flex-column align-items-center gap-2 p-3">
+                    <h3 class="size-12">{{ slide.title }}</h3>
+                    <p>{{ slide.data }}</p>
+                    <p>{{ slide.text }}</p>
+                </div>
             </div>
         </div>
     </section>
@@ -100,7 +103,12 @@ export default{
 .angleBox {
     display: flex;
     justify-content: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
 }
+
 
 .angle {
     font-size: 25px;
@@ -116,5 +124,28 @@ export default{
 
 .slidesBox {
     overflow: hidden;
+    width: 82%;
+    margin: 0 auto;
+}
+
+
+.cardBox {
+    background-color: #e1e1e1;
+    border-radius: 8px;
+    text-align: center;
+    width: 25rem;
+    height: 32rem;
+}
+
+img {
+    border-radius: 8px 8px 0 0;
+    width: 25rem;
+}
+
+// font size 
+.size-12{
+    font-size: 18px;
+    font-weight: bolder;
+
 }
 </style>
