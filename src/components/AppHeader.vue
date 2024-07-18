@@ -43,7 +43,7 @@ export default {
       </div>
       <!-- frasi dinamiche -->
       <div id="sentences" class="col-8 d-flex align-items-center" @mouseenter="stopAutoPlay" @mouseleave="startAutoPlay">
-        <div class="col-6">
+        <div class="col-6 d-flex">
             <router-link :to="{ name: store.sentencesArray[store.activeSentence].route }" class="link">
                 <img :src="store.sentencesArray[store.activeSentence].img" alt="">
                 <span>{{ store.sentencesArray[store.activeSentence].time }}</span>
@@ -180,7 +180,7 @@ header {
 
       img {
         width: 40px;
-        height: 42px;
+        height: 43px;
         object-fit: cover;
       }
 
