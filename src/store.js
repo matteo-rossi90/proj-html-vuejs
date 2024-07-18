@@ -1,5 +1,26 @@
 import { reactive } from "vue";
 export const store = reactive({
+    //Header
+    navArray: [
+        {
+            title: 'home',
+            icon: 'fa-solid fa-house-chimney',
+            route: 'home'
+
+        },
+        {
+            title: 'about-us',
+            icon: 'fa-solid fa-user',
+            route: 'about'
+
+        },
+        {
+            title: 'contact-us',
+            icon: 'fa-solid fa-envelope',
+            route: 'contact'
+
+        }
+    ],
     //YouTube player
     activeVideo: 0,
     videoArray: [

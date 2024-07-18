@@ -1,8 +1,15 @@
 <script>
+import { store } from '../store';
+
 export default {
-    name:'AppHeader'
+    name:'AppHeader',
+    data() {
+        return {
+            store
+        }
+    }
+
 };
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 </script>
 <template>
     <header>
@@ -11,6 +18,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
                 news updates
             </div>
             <div class="col-8">
+
 
 
             </div>
@@ -105,22 +113,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
                 </div>
 
                 <ul class="col-8 text-center">
-                    <li>
-                        <router-link :to="{name: 'home'}">
-                            <i class="fa-solid fa-house-chimney"></i>
-                            home
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link :to="{name: 'about'}">
-                            <i class="fa-solid fa-user"></i>
-                            about-us
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link :to="{name: 'contact'}">
-                            <i class="fa-solid fa-envelope"></i>
-                            contact-us
+                    <li v-for="(link, i) in store.navArray" :key="i">
+                        <router-link :to="{name: link.route}">
+                            <i :class="link.icon"></i>
+                            {{link.title}}
                         </router-link>
                     </li>
                 </ul>
