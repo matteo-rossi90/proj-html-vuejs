@@ -155,11 +155,10 @@ export default {
 
 #banner-contact{
     height: 200px;
-    background-image: url('../../public/imgs/assets/300x250.webp');
-    background-color: rgba(0,0,0,0.6);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/public/imgs/assets/300x250.webp');
     background-size: 100%, cover;
     background-position-x: center;
-    background-position-y: 53%;
+    background-position-y: 50%;
     background-repeat: no-repeat;
 
     h2{
