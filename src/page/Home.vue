@@ -40,7 +40,7 @@ import Cards from '../components/Cards.vue';
 @use 'src/style/partials/_variables.scss' as *;
 @use 'src/style/partials/_mixins.scss' as *;
 #carosello1{
-
+    width: 100%;
 }
 
 #yt-player{
