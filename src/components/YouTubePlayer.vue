@@ -20,32 +20,8 @@ export default{
             <div class="col-8 px-0 text-end">
                 <!-- video 1 -->
                  <div class="">
-                    <iframe width="840" height="550" src="https://www.youtube.com/embed/9rYkZlt2hHE" title="Eternal Cultivation Anime Episode :) 113,114 | Anime Land Explain In Hindi." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="840" height="550" :src="store.videoArray[store.activeVideo].video" title="Eternal Cultivation Anime Episode :) 113,114 | Anime Land Explain In Hindi." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                  </div>
-                <!-- video 2 -->
-                 <div class="display">
-                    <iframe width="840" height="550" src="https://www.youtube.com/embed/zlwQERpksnw" title="Non picchia solo il sole | Il meglio di Escanor (Spoiler!) | I Sette Peccati Capitali" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <!-- video 3 -->
-                <div class="display">
-                    <iframe width="840" height="550" src="https://www.youtube.com/embed/itQnUDMMhaU" title="Top 10 Vinland Saga moments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <!-- video 4 -->
-                <div class="display">
-                    <iframe width="840" height="550" src="https://www.youtube.com/embed/IrU2dklT11s" title="Everytime Sukuna Appears" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <!-- video 5 -->
-                <div class="display">
-                    <iframe width="840" height="550" src="https://www.youtube.com/embed/H5qupR6YQpQ" title="Wizard King (Julius) vs Licht (Patri) Full Fight [English Sub]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-                </div>
-                <!-- video 6 -->
-                <div class="display">
-                    <iframe width="840" height="550" src="https://www.youtube.com/embed/ICt1jYfucec" title="Vinland Saga | SHATTERED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-                </div>
-                <!-- video 7 -->
-                <div class="display">
-                    <iframe width="840" height="550" src="https://www.youtube.com/embed/CkC5CtabT1Y" title="Konan arranges 600 billion explosive charms to defeat Uchiha Madara" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
             </div>
             <!-- sexione lista video -->
             <div id="video-list" class="col-4 px-0">
@@ -62,7 +38,7 @@ export default{
                 <!-- body lista player -->
                 <div id="player-body" class="overflow-y-auto">
                     <!-- card video -->
-                    <div class="col-12 d-flex align-items-center player-card" v-for="(video, index) in store.videoArray" :key="video.id">
+                    <div class="col-12 d-flex align-items-center player-card clickable" v-for="(video, index) in store.videoArray" :key="video.id" @click="store.activeVideo = index">
                         <!-- numero video -->
                         <div class="col-1">
                             <div class="vd-number text-center ms-1">
@@ -89,9 +65,9 @@ export default{
 @use '../style/partials/variables' as *;
 
 #yt-player{
-    .display{
-        display: none;
-    }
+    .clickable{
+            cursor: pointer;
+        }
 
     .player-card{
         height: 100px;
@@ -139,6 +115,7 @@ export default{
 
     #video-list{
         height: 550px;
+        width: 400px;
     }
 }
 
