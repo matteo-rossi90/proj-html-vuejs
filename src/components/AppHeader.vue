@@ -47,7 +47,7 @@ export default {
             <router-link :to="{ name: store.sentencesArray[store.activeSentence].route }" class="link">
                 <img :src="store.sentencesArray[store.activeSentence].img" alt="">
                 <span>{{ store.sentencesArray[store.activeSentence].time }}</span>
-                <span>{{ store.sentencesArray[store.activeSentence].sentence }}</span>
+                <p>{{ store.sentencesArray[store.activeSentence].sentence }}</p>
             </router-link>
         </div>
         <div class="col-5 text-end">
@@ -180,7 +180,7 @@ header {
 
       img {
         width: 40px;
-        height: 40px;
+        height: 42px;
         object-fit: cover;
       }
 
@@ -197,11 +197,25 @@ header {
         text-decoration: none;
         color: white;
 
-        span:nth-child(3){
+        p:nth-child(3){
+            display: inline-block;
+            transition: all 0.2s ease;
+
+            // white-space: nowrap; 
+            // clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+            // animation: typing 5s steps(120, end) infinite;
             &:hover{
                 color: $quaternary-color;
             }
-        }
+            @keyframes typing { 
+                0% { 
+                    width: 0% 
+                } 
+                100% { 
+                    width: 50% 
+                } 
+            } 
+          }
       }
     }
 

@@ -8,7 +8,7 @@ export default {
         Portfolio,
         lifestyle3,
         Cards
-    }
+    },
 };
 
 import YouTubePlayer from '../components/YouTubePlayer.vue';
