@@ -1,10 +1,10 @@
 <script>
-import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
-import '@splidejs/vue-splide/css';
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide'; //import
+import '@splidejs/vue-splide/css'; //import
 
 export default {
     name:'lifestyle3',
-    components: {Splide, SplideSlide, SplideTrack},
+    components: {Splide, SplideSlide, SplideTrack}, //import
     data() {
         return {
             currentIndex: 0,
@@ -57,14 +57,14 @@ export default {
                     text: 'Money money money money money.',
                 }
             ],
-            splideOptions: {
-                type: 'loop',
-                perPage: 3,
-                gap: '1rem',
-                perMove: 1,
-                pagination: false,
-                arrows: false,
-                autoplay: true,
+            splideOptions: { //add styles framework
+                type: 'loop', //add styles framework
+                perPage: 3, //add styles framework
+                gap: '1rem', //add styles framework
+                perMove: 1, //add styles framework
+                pagination: false, //add styles framework
+                arrows: false, //add styles framework
+                autoplay: true, //add styles framework
             },
         }
     }
@@ -77,19 +77,19 @@ export default {
         <!-- bottoni -->
         <span><h3 class="featuredTitle">FEATURED POSTS</h3></span>
         <div class="angleBox">
+            <!-- Nelle frecciete aggiungiamo @click="this.$refs.carousel.splide.go('<') per fare andare indietro le immagini"  -->
             <button class="angle" @click="this.$refs.carousel.splide.go('<')">
-                <
+                <i class="fa-solid fa-angle-left"></i>
             </button>
+            <!-- aggiungiamo @click="this.$refs.carousel.splide.go('>') per fare andare indietro le immagini"  -->
             <button class="angle" @click="this.$refs.carousel.splide.go('>')">
-                >
+                <i class="fa-solid fa-angle-right"></i>
             </button>
         </div>
-        <!-- carroselo -->
+        <!-- carroselo add tag Splide per il contenitore e SplideSlide per la struttura delle card. Dentro del tag slide aggiungiamo ref carousel bla bla bla per aggiungere delle options tramite API-->
         <Splide ref="carousel" :options="splideOptions" class= "slidesBox d-flex gap-3">
             <SplideSlide class="cardBox position-relative" v-for="(slide, index) in slides" :key="index">
-                <!-- <div class="position-relative"> -->
                 <img :src="slide.image" :alt="slide.title">
-                <!-- </div> -->
                 <div class="buttonBox d-flex justify-content-between gap-3">
                 <button type="button" class="btn btn-secondary btn-sm">Lifestyle</button>
                 <button type="button" class="btn btn-primary btn-sm">Stories</button>
@@ -100,8 +100,9 @@ export default {
                     <p>{{ slide.text }}</p>
                 </div>
                 <button type="button" class="btn btn-danger">Read More</button>
-            </SplideSlide>
+            </SplideSlide> 
         </Splide>
+        <!-- chiudere entrambi i tag -->
     </section>
 </template>
 
