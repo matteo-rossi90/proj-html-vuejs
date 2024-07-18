@@ -7,8 +7,9 @@ export default {
         Carosello1,
         Portfolio,
         lifestyle3,
-        Cards
-    },
+        Cards,
+        LifestyleStories
+    }
 };
 
 import YouTubePlayer from '../components/YouTubePlayer.vue';
@@ -21,6 +22,8 @@ import lifestyle3 from '../components/lifestyle3.vue';
 
 import Cards from '../components/Cards.vue';
 
+import LifestyleStories from '../components/LifestyleStories.vue';
+
 </script>
 
 <template>
@@ -28,11 +31,12 @@ import Cards from '../components/Cards.vue';
    <Carosello1/>
 </section>
     <Portfolio/>
+
+    <LifestyleStories/>
 <section id="lifestyle3">
     <lifestyle3/>
 </section>
     <YouTubePlayer />
-    <Cards/>
 </template>
 
 <style lang="scss" scoped>
