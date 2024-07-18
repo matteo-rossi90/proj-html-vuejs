@@ -55,22 +55,22 @@ export default{
             ],
         }
     },
-
+//DEBO HACER LA LOGICA DEL MALDITO CARRUSEL :V 
     methods: {
-        nextImage() {
-            console.log('hey');
-            this.currentIndex++
-            if (this.currentIndex > this.slides.length - 1) {
-                this.currentIndex = 0;
-            }
-        },
+        // nextImage() {
+        //     console.log('hey');
+        //     if (this.currentIndex > this.slides.length - 1) {
+        //         this.currentIndex++
+        //     }
+        // },
 
-        prevImage() {
-            this.currentIndex--;
-            if (this.currentIndex < 0) {
-                this.currentIndex = this.slides.length - 1;
-            }
-        }
+        // prevImage() {
+        //     if (this.currentIndex <= 0) {
+        //         this.currentIndex = this.slides.length - 1;
+        //         this.currentIndex--;
+                
+        //     }
+        // }
     }
 };
 
