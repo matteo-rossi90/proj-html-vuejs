@@ -38,7 +38,7 @@ export default{
                 <!-- body lista player -->
                 <div id="player-body" class="overflow-y-auto">
                     <!-- card video -->
-                    <div class="col-12 d-flex align-items-center player-card" v-for="(video, index) in store.videoArray" :key="video.id" @click="store.activeVideo = index">
+                    <div class="col-12 d-flex align-items-center player-card clickable" v-for="(video, index) in store.videoArray" :key="video.id" @click="store.activeVideo = index">
                         <!-- numero video -->
                         <div class="col-1">
                             <div class="vd-number text-center ms-1">
@@ -65,9 +65,9 @@ export default{
 @use '../style/partials/variables' as *;
 
 #yt-player{
-    .display{
-        display: none;
-    }
+    .clickable{
+            cursor: pointer;
+        }
 
     .player-card{
         height: 100px;
