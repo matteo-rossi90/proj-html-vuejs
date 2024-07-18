@@ -83,8 +83,8 @@ export default {
 
 <template>
     <footer>
-        <div class="container">
-            <div class="row justify-content-center pt-5  ">
+        <div class="container ft_cont">
+            <div class="row justify-content-center">
                 <!-- footer links section -->
                 <div class="col-2 mt-5 mb-5">
                     <h5><a href="#">GET STARTED </a></h5>
@@ -128,15 +128,14 @@ export default {
                 </div>
             </div>
             <hr>
-            <!-- closing logo -->
+            <!-- closing logo and copyright -->
             <div class="row d-flex justify-content-between align-items-baseline">
                 <div class="col-3 mt-3 mb-1 ">
                     <img src="../../public/imgs/assets/anime-whitelogo-300x89.png" alt="">
                 </div>
                 <div class="col-3">
                     <span><i class="fa-regular fa-copyright"></i> Anime Tech, Theme by HasnainDEV</span>
-                </div>
-                
+                </div> 
             </div>
         </div>
     </footer>
@@ -148,6 +147,9 @@ export default {
 @use 'src/style/partials/_mixins.scss' as *;
 footer{
  background-color: $primary-color;
+ .ft_cont{
+    margin: 0 auto;
+ }
     form {
         gap: 1.2rem;
     }
@@ -173,10 +175,15 @@ footer{
                 font-style: normal;
                 text-decoration: none;
             }
+            //stiling input
+            input{
+                padding: 0.7rem;
+            }
 
             //styling subscription button
             .subs_bt{
                 width: 100%;
+                padding: 0.7rem;
                 background-color: $quaternary-color;
                 color:$secondary-color ;
             }
