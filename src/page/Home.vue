@@ -7,6 +7,7 @@ export default {
         Carosello1,
         Portfolio,
         lifestyle3,
+        Cards
     }
 };
 
@@ -17,6 +18,8 @@ import Carosello1 from '../components/Carosello1.vue';
 import Portfolio from '../components/Portfolio.vue';
 
 import lifestyle3 from '../components/lifestyle3.vue';
+
+import Cards from '../components/Cards.vue';
 
 </script>
 
@@ -29,6 +32,7 @@ import lifestyle3 from '../components/lifestyle3.vue';
     <lifestyle3/>
 </section>
     <YouTubePlayer />
+    <Cards/>
 </template>
 
 <style lang="scss" scoped>
@@ -36,52 +40,6 @@ import lifestyle3 from '../components/lifestyle3.vue';
 @use 'src/style/partials/_variables.scss' as *;
 @use 'src/style/partials/_mixins.scss' as *;
 #carosello1{
-
-}
-
-#yt-player{
-    .player-card{
-        height: 100px;
-        background-color: $tertiary-color;
-        border-bottom: 1px solid $quaternary-color;
-
-        .vd-number{
-            background-color: $quaternary-color;
-            color: white;
-            border-radius: 5px;
-            height: 30px;
-            width: 30px;
-        }
-
-        .vd-thumb{
-            img{
-                width: 80%;
-                border-radius: 15px;
-                margin: 0 10px;
-            }
-        }
-
-        .vd-title{
-            span{
-                color: $primary-color;
-            }
-        }
-    }
-    #player-header{
-        height: 90px;
-        background-color: $quaternary-color;
-        color: white;
-
-        i{
-            font-size: 40px;
-        }
-        span{
-            font-size: 13px;
-        }
-    }
-
-    #video-list{
-        height: 550px;
-    }
+    width: 100%;
 }
 </style>
