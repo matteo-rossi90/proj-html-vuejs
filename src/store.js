@@ -21,6 +21,30 @@ export const store = reactive({
 
         }
     ],
+
+    activeSentence: 0,
+    timer: null,
+    sentencesArray: [
+        {
+            time: '05:37',
+            sentence: 'find out more about us',
+            img: '/imgs/assets/rice-ball.webp',
+            route: 'about'
+        },
+        {
+            time: '10:25',
+            sentence: 'contact us!',
+            img: '/imgs/assets/rice-ball.webp',
+            route: 'contact'
+        },
+        {
+            time: '18:30',
+            sentence: 'our home page',
+            img: '/imgs/assets/rice-ball.webp',
+            route: 'home'
+        },
+
+    ],
     //YouTube player
     activeVideo: 0,
     videoArray: [
