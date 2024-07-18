@@ -34,13 +34,13 @@ export const store = reactive({
         {
             time: '10:25',
             sentence: 'contact us!',
-            img: '/imgs/assets/rice-ball.webp',
+            img: '/imgs/assets/meal-time-150x150.webp',
             route: 'contact'
         },
         {
             time: '18:30',
             sentence: 'our home page',
-            img: '/imgs/assets/rice-ball.webp',
+            img: '/imgs/assets/winter-150x150.webp',
             route: 'home'
         },
 
