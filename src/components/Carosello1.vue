@@ -77,24 +77,55 @@ export default{
             title:'Fashion Trend Now A Days',
             dateEvent: 'December 25, 2022 No Comments'
         },
-    ]
-
+        ],
+        autoplayInterval: null,
+        autoplayDelay: 3000 // tempo in millisecondi tra ogni scorrimento automatico
+        }
+    },
+    mounted() {
+        this.startAutoplay();
+    },
+    beforeDestroy() {
+        this.stopAutoplay();
+    },
+    methods: {
+        startAutoplay() {
+            this.autoplayInterval = setInterval(() => {
+                this.nextCard();
+            }, this.autoplayDelay);
+        },
+        stopAutoplay() {
+            clearInterval(this.autoplayInterval);
+        },
+        prevCard() {
+            this.cardCarosel1.unshift(this.cardCarosel1.pop());
+        },
+        nextCard() {
+            this.cardCarosel1.push(this.cardCarosel1.shift());
         }
     }
 }
 </script>
 
 <template>
-    <div class="container-fluid" data-bs-ride="carousel">
-        <div class="row d-flex flex-nowrap "> 
-            <div class="col-3 card car_card active" v-for="element in cardCarosel1" :key="element.id">
+    <div class="container-fluid">
+        <div class="row d-flex flex-nowrap relative"> 
+            <div class="col-3 card car_card " v-for="element in cardCarosel1" :key="element.id">
                 <img :src="element.image" class="card-img-top " alt="...">
                 <div class="card-body text-center">
                     <h5>{{element.title}}</h5>
                     <p>{{element.dateEvent}}</p>
                 </div>
             </div>
-            <!-- cursor next prev -->
+            <!-- cursor prev -->
+            <div id="prev_cursor" @click="prevCard">
+                <i class="fa-solid fa-circle-chevron-left icon"></i>
+            </div>
+            <!-- cursor next-->
+            <div id="next_cursor"@click="nextCard">
+                <i class="fa-solid fa-circle-chevron-right icon"></i>
+            </div>
+            
         </div> 
      
     </div> 
@@ -103,7 +134,29 @@ export default{
 @use '../style/generals.scss' as *;
 @use 'src/style/partials/_variables.scss' as *;
 @use 'src/style/partials/_mixins.scss' as *;
+.container-fluid {
+    overflow: hidden;
+}
+    .relative{
+        position: relative;
+    }
+    .icon{
+        font-size: 30px;
+        background-color: $primary-color;
+        border-radius: 50%;
+    }
+        #prev_cursor,  #next_cursor{
+            color: $secondary-color;
+            position: absolute;
+            top: 40%;
+            left: 0;
+                &:hover{
 
+                }
+        }
+        #next_cursor{
+            left: 95%;
+        }
 </style>
 
 
