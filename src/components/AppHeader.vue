@@ -38,7 +38,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
                 </a>
             </div>
             <div class="col-6 text-end">
-                <img src="/imgs/assets/header-banner.webp" alt="adv">
+                <img style="width: 54.5rem;" id="headerBanner" src="/imgs/assets/header-banner.webp" alt="adv">
             </div>
         </section>
 
@@ -138,6 +138,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 <style lang="scss" scoped>
     @use '../style/partials/variables' as *;
+
     header{
         #top-banner{
             background-color: $primary-color;
