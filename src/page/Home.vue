@@ -36,7 +36,7 @@ import lifestyle3 from '../components/lifestyle3.vue';
 @use 'src/style/partials/_variables.scss' as *;
 @use 'src/style/partials/_mixins.scss' as *;
 #carosello1{
-
+    width: 100%;
 }
 
 #yt-player{
