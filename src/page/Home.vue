@@ -1,7 +1,12 @@
 <script>
 export default {
-    name:'Home'
+    name:'Home',
+    components: {
+        YouTubePlayer
+    }
 };
+
+import YouTubePlayer from '../components/YouTubePlayer.vue';
 
 </script>
 
@@ -248,58 +253,98 @@ export default {
 </section>
 
 <section id="lifestyle3"></section>
-
-<section id="featured">
-
-</section>
-
-<section id="yt-player" class="my-5">
-    <div class="container">
-        <div class="row">
-            <!-- video grande -->
-            <div class="col-8 px-0 text-end">
-                <iframe width="840" height="550" src="https://www.youtube.com/embed/9rYkZlt2hHE" title="Eternal Cultivation Anime Episode :) 113,114 | Anime Land Explain In Hindi." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- cri seccion -->
+<!-- <section  class="mb-5 bg-white">
+            <div class="d-flex justify-content-center py-5">
+                <img class="rounded" src="/imgs/assets/header-banner.webp" alt="adv">
             </div>
-            <!-- sexione lista video -->
-            <div id="video-list" class="col-4 px-0">
-                <!-- header lista video -->
-                <div id="player-header" class="col-12 d-flex align-items-center player-card">
-                    <div class="col-2 p-3 text-center">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
-                    <div class="col-10">
-                        <h6 class="mb-0">Video Playlist</h6>
-                        <span>1/7 Videos</span>
-                    </div>                    
-                </div>
-                <!-- body lista player -->
-                <div id="player-body">
-                    <!-- card video -->
-                    <div class="col-12 d-flex align-items-center player-card">
-                        <!-- numero video -->
-                        <div class="col-1">
-                            <div class="vd-number text-center ms-1">
-                                1
-                            </div>
-                        </div>
-                        <!-- thumbnail video -->
-                         <div class="col-3 vd-thumb">
-                            <img src="https://i.ytimg.com/vi/9rYkZlt2hHE/hqdefault.jpg" alt="">
-                         </div>
-                         <!-- titolo video -->
-                          <div class="col-8 vd-title">
-                            <span>Eternal Cultivation Anime</span>
-                          </div>
-                    </div>
-                </div>
-
-
-                
-            </div>
+</section> -->
+<section id="featured" class="d-flex justify-content-center gap-3 flex-wrap">
+    <!-- card 1 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/best-places.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
         </div>
     </div>
-
+    <!-- card 2 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/music-love.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 3 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/anime-fashion.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 4 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/winter.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 5 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/photographers-mistakes.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 6 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/ideas-anime.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 7 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/visit-france.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 8 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/travel-alone.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    <!-- card 9 -->
+    <div class="card" style="width: 25rem;">
+        <img src="../../public/imgs/assets/success-story.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Places for a Road Trip</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
 </section>
+<!-- finish cri seccion -->
+
+    <YouTubePlayer />
 </template>
 
 <style lang="scss" scoped>
@@ -405,9 +450,13 @@ export default {
 
 }
 
+//cri section
 #featured4{
-
+.bg-white{
+    background-color: #F3F3F3;
 }
+}
+//finish cri section
 
 #yt-player{
     .player-card{
