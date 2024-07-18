@@ -10,68 +10,62 @@ export default {
 
     <!-- sezione relativa al banner e ai contatti -->
     <section>
-        <div class="container-fluid">
 
-            <!-- banner -->
-            <div class="row">
-                 <div class="col">
-                    <div id="banner-contact" class="d-flex justify-content-center align-items-center">
-                        <h2>Contact us</h2>
-                    </div>
-                 </div>
-            </div>
+        <!-- banner -->
+        <div id="banner-contact" class="d-flex justify-content-center align-items-center">
+            <h2>Contact us</h2>
+        </div>
            
-            <!-- riferimenti per i contatti -->
-            <div class="row container-fluid container-box py-4 g-5">
+        <!-- riferimenti per i contatti -->
+        <div class="row container-fluid container-box py-4">
 
-                <div class="col px-2">
-                    <div class="box-contact p-2 d-flex align-items-center">
-                        <div class="box-icon d-flex justify-content-center align-items-center p-3">
-                             <i class="fa-solid fa-phone-volume"></i>
-                        </div>
-                        <span>
-                            <div class="text p-3">
-                                <h4>CALL US</h4>
-                                <small>02 90 222 333</small>
-                            </div>
-                        </span>
+            <div class="col px-2">
+                <div class="box-contact p-2 d-flex align-items-center">
+                    <div class="box-icon d-flex justify-content-center align-items-center p-3">
+                            <i class="fa-solid fa-phone-volume"></i>
                     </div>
-                    
-                </div>
-
-                <div class="col px-2">
-                    <div class="box-contact p-2 d-flex align-items-center">
-                        <div class="box-icon d-flex justify-content-center align-items-center p-3">
-                            <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <div class="text p-3">
+                            <h4>CALL US</h4>
+                            <small>02 90 222 333</small>
                         </div>
-                        <span>
-                            <div class="text p-3">
-                                <h4>EMAIL US</h4>
-                                <small>info@domain.com</small>
-                            </div>
-                        </span>
-                    </div>
-                    
+                    </span>
                 </div>
+                
+            </div>
 
-                <div class="col px-2">
-                    <div class="box-contact p-2 d-flex align-items-center">
-                        <div class="box-icon d-flex justify-content-center align-items-center p-3">
-                             <i class="fa-solid fa-location-dot"></i>
+            <div class="col px-2">
+                <div class="box-contact p-2 d-flex align-items-center">
+                    <div class="box-icon d-flex justify-content-center align-items-center p-3">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span>
+                        <div class="text p-3">
+                            <h4>EMAIL US</h4>
+                            <small>info@domain.com</small>
                         </div>
-                        <span>
-                            <div class="text p-3">
-                                <h4>POSITION US</h4>
-                                <small>3308 Fleming Street</small>
-                            </div>
-                        </span>
-                    </div>
-                    
+                    </span>
                 </div>
+                
+            </div>
 
+            <div class="col px-2">
+                <div class="box-contact p-2 d-flex align-items-center">
+                    <div class="box-icon d-flex justify-content-center align-items-center p-3">
+                            <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span>
+                        <div class="text p-3">
+                            <h4>POSITION US</h4>
+                            <small>3308 Fleming Street</small>
+                        </div>
+                    </span>
+                </div>
+                
             </div>
 
         </div>
+
 
     </section>
 
@@ -83,13 +77,13 @@ export default {
             <div class="col-7">
 
                 <!-- intestazione e paragrafo -->
-                <div class="py-4">
+                <div class="py-2">
                     <h2 class="my-3">GET IN TOUCH</h2>
                     <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
 
                 <!-- parte del form -->
-                <form class="row pe-3">
+                <form class="row pe-2">
 
                     <!-- Nome -->
                     <div class="col-md-6 pe-2 mb-3">
@@ -141,9 +135,7 @@ export default {
 
     <!-- sezione relativa alla mappa e ai riferimenti geografici -->
     <section>
-        <div class="row container-fluid">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5571774233263!2d-0.12169171831549892!3d51.502993197356524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c7be3d9791%3A0x67bb55b5c4867f8c!2sLondon%20Eye%20Ticket%20Office!5e0!3m2!1sit!2sit!4v1721207445926!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5571774233263!2d-0.12169171831549892!3d51.502993197356524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c7be3d9791%3A0x67bb55b5c4867f8c!2sLondon%20Eye%20Ticket%20Office!5e0!3m2!1sit!2sit!4v1721207445926!5m2!1sit!2sit" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     
 </template>
@@ -193,12 +185,13 @@ export default {
 
 .btn-send{
     background-color: $primary-color;
-    color: white;
+    color: $secondary-color;
     border-radius: 20px;
     transition: 0.5s;
 
     &:hover{
         background-color: $quaternary-color;
+        color: $secondary-color;
     }
 }
 
