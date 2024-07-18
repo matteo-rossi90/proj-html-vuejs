@@ -1,5 +1,26 @@
 import { reactive } from "vue";
 export const store = reactive({
+    //Header
+    navArray: [
+        {
+            title: 'home',
+            icon: 'fa-solid fa-house-chimney',
+            route: 'home'
+
+        },
+        {
+            title: 'about-us',
+            icon: 'fa-solid fa-user',
+            route: 'about'
+
+        },
+        {
+            title: 'contact-us',
+            icon: 'fa-solid fa-envelope',
+            route: 'contact'
+
+        }
+    ],
     //YouTube player
     activeVideo: 0,
     videoArray: [
@@ -19,7 +40,7 @@ export const store = reactive({
             id: 3,
             title: "Top 10 Vinland Saga Moments",
             thumb: 'https://i.ytimg.com/vi/itQnUDMMhaU/hqdefault.jpg',
-            video: 'https://www.youtube.com/embed/zlwQERpksnw?showinfo=0&rel=0&enablejsapi=1&origin=https%3A%2F%2Fdemo.hasnaindev.com&widgetid=2'
+            video: 'https://www.youtube.com/embed/CkC5CtabT1Y?showinfo=0&rel=0&enablejsapi=1&origin=https%3A%2F%2Fdemo.hasnaindev.com&widgetid=7'
         },
         {
             id: 4,
