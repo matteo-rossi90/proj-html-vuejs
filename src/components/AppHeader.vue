@@ -51,8 +51,8 @@ export default {
             </router-link>
         </div>
         <div class="col-5 text-end">
-          <strong @click="prev">&lt;</strong>
-          <strong @click="next">&gt;</strong>
+          <i class="fa-solid fa-chevron-left" @click="prev"></i>
+          <i class="fa-solid fa-chevron-right" @click="next"></i>
         </div>
       </div>
       <!-- social -->
@@ -188,9 +188,10 @@ header {
         margin: 0 5px;
       }
 
-      strong {
+      i {
         margin-left: 15px;
         cursor: pointer;
+        font-size: 20px;
       }
 
       .link{

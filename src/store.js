@@ -90,14 +90,9 @@ export const store = reactive({
             thumb: 'https://i.ytimg.com/vi/CkC5CtabT1Y/hqdefault.jpg',
             video: 'https://www.youtube.com/embed/CkC5CtabT1Y?showinfo=0&rel=0&enablejsapi=1&origin=https%3A%2F%2Fdemo.hasnaindev.com&widgetid=7'
         },
-
-
-
-
-
     ],
     //bottom cards Array
-    bottomCards:[
+    bottomCards: [
         {
             text: 'FASHION',
             image: '/imgs/assets/anime-fashion.webp',
@@ -128,5 +123,44 @@ export const store = reactive({
             image: '/imgs/assets/best-places.webp',
             post: '3 posts'
         }
-    ]
+    ],
+
+    //LifestyleStories
+    lifeStory: [
+        {
+            img: '/imgs/assets/success-story.webp',
+            button: 'Culture',
+            title: 'The Best Succes Stories',
+        },
+        {
+            img: '/imgs/assets/travel-alone-300x200.webp',
+            button: 'Stories',
+            title: 'Traveling alone is awesome',
+        },
+        {
+            img: '/img/assets/ideas-anime.webp',
+            button: 'Culture',
+            title: 'Live Ideas you might be anime',
+        },
+        {
+            img: '/img/assets/best-places.webp',
+            button: 'Lifestyle',
+            title: 'Places for a road trip',
+        },
+        {
+            img: '/img/assets/visit-france.webp',
+            button: 'Lifestyle',
+            title: 'Reasons to visit france',
+        },
+        {
+            img: '/img/assets/music-love.webp',
+            button: 'Culture',
+            title: 'Music the Love of my life',
+        },
+        {
+            img: '/img/assets/anime-fashion.webp"',
+            button: 'Fashion',
+            title: 'Fashion trend now a days',
+        }
+    ],
 });
