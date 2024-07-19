@@ -181,48 +181,4 @@ export const store = reactive({
             icon: 'fa-solid fa-location-dot'
         }
     ],
-    //elementi del portfolio
-    columns: [
-        [
-            {
-                buttons: ["Fashion", "Lifestyle"],
-                author: "demo",
-                date: "Dicembre 25, 2022",
-                title: "Fashion trend now a days",
-                imgSrc: "/imgs/assets/anime-fashion.webp"
-            },
-            {
-                buttons: ["Stories", "Travel"],
-                author: "demo",
-                date: "Dicembre 25, 2022",
-                title: "Fashion trend now a days",
-                imgSrc: "/imgs/assets/travel-alone.webp"
-            }
-        ]
-    ],
-    centerImage: {
-        buttons: ["Lifestyle", "Stories", "Travel"],
-        author: "demo",
-        date: "Dicembre 25, 2022",
-        title: "Fashion trend now a days",
-        imgSrc: "/imgs/assets/best-places.webp"
-    },
-    columnsRight: [
-        [
-            {
-                buttons: ["Culture", "Lifestyle"],
-                author: "demo",
-                date: "Dicembre 25, 2022",
-                title: "Fashion trend now a days",
-                imgSrc: "/imgs/assets/music-love.webp"
-            },
-            {
-                buttons: ["Lifestyle", "Travel"],
-                author: "demo",
-                date: "Dicembre 25, 2022",
-                title: "Fashion trend now a days",
-                imgSrc: "/imgs/assets/visit-france.webp"
-            }
-        ]
-    ]
 });

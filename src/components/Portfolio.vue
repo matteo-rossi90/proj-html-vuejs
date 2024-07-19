@@ -1,12 +1,55 @@
 <script>
-import { store } from '../store'
 
 export default {
     name: 'Portfolio',
     data(){
         return{
-            store,
-        }
+        //elementi del portfolio
+        columns: [
+            [
+              {
+                buttons: ["Fashion", "Lifestyle"],
+                author: "demo",
+                date: "Dicembre 25, 2022",
+                title: "Fashion Trend Now a Days",
+                imgSrc: "/imgs/assets/anime-fashion.webp"
+              },
+              {
+                buttons: ["Stories", "Travel"],
+                author: "demo",
+                date: "Dicembre 26, 2022",
+                title: "Travelling Alone Is Awesome",
+                imgSrc: "/imgs/assets/travel-alone.webp"
+              }
+            ]
+        ],
+          centerImage: {
+              buttons: ["Lifestyle", "Stories", "Travel"],
+              author: "demo",
+              date: "Dicembre 25, 2022",
+              title: "Places For a Road Trip",
+              imgSrc: "/imgs/assets/best-places.webp"
+          },
+          columnsRight: [
+          [
+            {
+                buttons: ["Culture", "Lifestyle"],
+                author: "demo",
+                date: "Dicembre 25, 2022",
+                title: "Music The Love of My Life",
+                imgSrc: "/imgs/assets/music-love.webp"
+            },
+            {
+                buttons: ["Lifestyle", "Travel"],
+                author: "demo",
+                date: "Dicembre 26, 2022",
+                title: "Reasons To Visit France",
+                imgSrc: "/imgs/assets/visit-france.webp"
+            }
+          ]
+        ]
+
+      }
     }
     
 }
@@ -15,144 +58,100 @@ export default {
 
 <template>
 
-    <section id="portfolio2">
-
+<section id="portfolio2">
     <!-- portfolio immagini -->
     <div class="row container-box py-4">
-        <div class="col-3 py-1 px-1">
-            <div class="box-image-col">
-                <div class="links py-3">
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Fashion
-                    </a>
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Lifestyle
-                    </a>
-                </div>
-                <div class="text-image py-3">
-                    <span class="px-1">
-                        <i class="fa-solid fa-user px-1"></i>
-                        demo
-                    </span>
-                    <span class="px-1">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        Dicembre 25, 2022
-                    </span>
-                    <h5>Fashion trend now a days</h5>
-                </div>
+
+      <!-- Colonna sinistra -->
+      <div class="col-3 py-1 px-1" v-for="(column, colIndex) in columns" :key="'left-' + colIndex">
         
-                <img src="/imgs/assets/anime-fashion.webp" alt="">
-    
-            </div>
-            <div class="box-image-col pt-2">
-                <div class="links py-3">
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Stories
-                    </a>
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Travel
-                    </a>
-                </div>
+        <div class="box-image-col py-1" v-for="(image, imgIndex) in column" :key="'left-' + colIndex + '-' + imgIndex">
 
-                <div class="text-image py-3">
-                    <span class="px-1">
-                        <i class="fa-solid fa-user px-1"></i>
-                        demo
-                    </span>
-                    <span class="px-1">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        Dicembre 25, 2022
-                    </span>
-                    <h5>Fashion trend now a days</h5>
-                </div>
+          <!-- pulsanti e link -->
+          <div class="links py-3">
+            <a v-for="(btn, btnIndex) in image.buttons" :key="btnIndex" href="#" class="btn py-1 px-4 btn-link">
+              {{ btn }}
+            </a>
+          </div>
 
-                <img src="/imgs/assets/travel-alone.webp" alt="">
-            </div>
+          <!-- parte dei testi -->
+          <div class="text-image py-3">
+            <span class="px-1">
+              <i class="fa-solid fa-user px-1"></i>
+              {{ image.author }}
+            </span>
+            <span class="px-1">
+              <i class="fa-solid fa-calendar-days"></i>
+              {{ image.date }}
+            </span>
+            <h5>{{ image.title }}</h5>
+          </div>
+
+          <!-- immagini -->
+          <img :src="image.imgSrc" alt="">
         </div>
-        <div class="col py-1 px-1">
-            <div id="box-image-center">
-                <div class="links py-3">
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Lifestyle
-                    </a>
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Stories
-                    </a>
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Travel
-                    </a>
-                </div>
+      </div>
 
-                <div id="text-image-center" class="py-3">
-                    <span class="px-1">
-                        <i class="fa-solid fa-user px-1"></i>
-                        demo
-                    </span>
-                    <span class="px-1">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        Dicembre 25, 2022
-                    </span>
-                    <h5>Fashion trend now a days</h5>
-                </div>
+      <!-- Colonna centrale -->
+      <div class="col py-1 px-1">
 
-                <img src="/imgs/assets/best-places.webp" alt="">
-            </div>
+        <div id="box-image-center" class="py-1">
+
+          <!-- pulsanti e link -->
+          <div class="links py-3">
+            <a v-for="(btn, btnIndex) in centerImage.buttons" :key="btnIndex" href="#" class="btn py-1 px-4 btn-link">
+              {{ btn }}
+            </a>
+          </div>
+
+          <!-- parte dei testi -->
+          <div id="text-image-center" class="py-3">
+            <span class="px-1">
+              <i class="fa-solid fa-user px-1"></i>
+              {{ centerImage.author }}
+            </span>
+
+            <span class="px-1">
+              <i class="fa-solid fa-calendar-days"></i>
+              {{ centerImage.date }}
+            </span>
+
+            <h5>{{ centerImage.title }}</h5>
+          </div>
+
+          <!-- immagine -->
+          <img :src="centerImage.imgSrc" alt="">
         </div>
-        <div class="col-3 py-1 px-1">
-            <div class="box-image-col">
-                <div class="links py-3">
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Culture
-                    </a>
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Lifestyle
-                    </a>
-                </div>
+      </div>
 
-                <div class="text-image py-3">
-                    <span class="px-1">
-                        <i class="fa-solid fa-user px-1"></i>
-                        demo
-                    </span>
-                    <span class="px-1">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        Dicembre 25, 2022
-                    </span>
-                    <h5>Fashion trend now a days</h5>
-                </div>
+      <!-- Colonna destra -->
+      <div class="col-3 py-1 px-1" v-for="(column, colIndex) in columnsRight" :key="'right-' + colIndex">
 
-                <img src="/imgs/assets/music-love.webp" alt="">
-            </div>
-            <div class="box-image-col pt-2">
-                <div class="links py-3">
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Lifestyle
-                    </a>
-                    <a href="#" class="btn py-1 px-4 btn-link">
-                        Travel
-                    </a>
-                </div>
+        <div class="box-image-col py-1" v-for="(image, imgIndex) in column" :key="'right-' + colIndex + '-' + imgIndex">
 
-                <div class="text-image py-3">
-                    <span class="px-1">
-                        <i class="fa-solid fa-user px-1"></i>
-                        demo
-                    </span>
-                    <span class="px-1">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        Dicembre 25, 2022
-                    </span>
-                    <h5>Fashion trend now a days</h5>
-                </div>
+          <div class="links py-3">
+            <a v-for="(btn, btnIndex) in image.buttons" :key="btnIndex" href="#" class="btn py-1 px-4 btn-link">
+              {{ btn }}
+            </a>
+          </div>
 
-                <img src="/imgs/assets/visit-france.webp" alt="">
-            </div>
+          <div class="text-image py-3">
+            <span class="px-1">
+              <i class="fa-solid fa-user px-1"></i>
+              {{ image.author }}
+            </span>
+            <span class="px-1">
+              <i class="fa-solid fa-calendar-days"></i>
+              {{ image.date }}
+            </span>
+            <h5>{{ image.title }}</h5>
+          </div>
+
+          <img :src="image.imgSrc" alt="">
         </div>
+      </div>
     </div>
-
-
-</section>
-
+  </section>
 </template>
 
 
@@ -163,6 +162,11 @@ export default {
 @use 'src/style/partials/_mixins.scss' as *;
 
 #portfolio2{
+
+    h5{
+      font-size: 17px;
+      font-weight: 700;
+    }
 
     .container-box{
         width: 80%;
@@ -189,16 +193,16 @@ export default {
 
     }
 
-        #text-image-center{
-            position: absolute;
-            z-index: 11;
-            color: $secondary-color;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            text-align: center;
-        }
+    #text-image-center{
+        position: absolute;
+        z-index: 11;
+        color: $secondary-color;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
 
     .box-image-col{
         position: relative;
