@@ -63,7 +63,7 @@ export default{
 
         </div>
 
-        <div id="loading-indicator" v-if="loading">
+        <div id="loading-indicator" >
             <div class="lds-hourglass"></div>
         </div>
 
@@ -120,8 +120,8 @@ export default{
 .lds-hourglass {
     display: inline-block;
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 15px;
+    height: 55px;
 }
 
 .lds-hourglass:after {
@@ -150,18 +150,4 @@ export default{
         transform: rotate(1800deg);
     }
 }
-
-// #loading{
-//     position: absolute;
-//     z-index: 900;
-//     background-color: lightgray;
-//     border-radius: 5px;
-//     font-weight: bolder;
-//     filter: opacity(0.3);
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-// }
-
 </style>
