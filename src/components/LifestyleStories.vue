@@ -20,7 +20,7 @@ export default{
     <!-- titolo e bottoni di navigazione -->
     <div class="col-12 container d-flex mb-3">
         <div class="col-6">
-            <h2>Lifestyle & Stories</h2>
+            <h3>Lifestyle & Stories</h3>
         </div>
 
         <div class="col-6">
@@ -75,8 +75,10 @@ export default{
 <style lang="scss" scoped>
 @use 'src/style/partials/_variables.scss' as *;
 
-h2{
-
+h3{
+    font-size: 1.75rem;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 h6{
