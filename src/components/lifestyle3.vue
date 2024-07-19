@@ -86,7 +86,7 @@ export default {
         <img id="bannerLifestyle3" src="../../public/imgs/assets/header-banner.webp" alt="banner">
     </div>
 
-    <section id="featured" >
+    <section class="container" id="featured" >
         <!-- bottoni -->
         <span><h3 class="featuredTitle">FEATURED POSTS</h3></span>
         <div class="angleBox">
@@ -187,7 +187,7 @@ button:hover {
 
 img {
     border-radius: 8px 8px 0 0;
-    width: 25rem;
+    width: 21.5rem;
 }
 
 // font size 
