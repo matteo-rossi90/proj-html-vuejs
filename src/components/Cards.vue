@@ -71,7 +71,7 @@ export default {
         max-width: 100%;
         border-radius: 5px;
         object-fit: cover;
-        object-position: left;
+        object-position: center;
         filter: brightness(0.5);
         transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
         transform: scale(1.3);
@@ -88,7 +88,7 @@ export default {
     }
 
     &:hover .text-message{
-        border: 1px solid white;
+        border: 1px solid $secondary-color;
         opacity: 1;
     }
 

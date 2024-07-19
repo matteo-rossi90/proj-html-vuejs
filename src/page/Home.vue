@@ -37,6 +37,7 @@ import LifestyleStories from '../components/LifestyleStories.vue';
     <lifestyle3/>
 </section>
     <YouTubePlayer />
+    <Cards/>
 </template>
 
 <style lang="scss" scoped>
