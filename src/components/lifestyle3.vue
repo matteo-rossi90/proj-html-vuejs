@@ -160,10 +160,10 @@ button:hover {
 }
 
 .angle {
-    font-size: 25px;
+    font-size: 15px;
     background-color: #2d2b2b;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     text-align: center;
     font-weight: bolder;
