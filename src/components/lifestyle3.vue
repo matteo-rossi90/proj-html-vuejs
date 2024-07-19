@@ -181,13 +181,13 @@ button:hover {
     background-color: #F3F3F3;
     border-radius: 8px;
     text-align: center;
-    width: 21.5rem;
+    width: 25rem;
     height: 30rem;
 }
 
 img {
     border-radius: 8px 8px 0 0;
-    width: 25rem;
+    width: 21.5rem;
 }
 
 // font size 
