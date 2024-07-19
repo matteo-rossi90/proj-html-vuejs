@@ -63,7 +63,7 @@ export default{
 
         </div>
 
-        <div id="loading-indicator" >
+        <div id="loading-indicator" v-if="loading">
             <div class="lds-hourglass"></div>
         </div>
 
