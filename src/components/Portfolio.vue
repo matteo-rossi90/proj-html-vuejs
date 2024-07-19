@@ -1,6 +1,13 @@
 <script>
+import { store } from '../store'
+
 export default {
-    name: 'Portfolio'
+    name: 'Portfolio',
+    data(){
+        return{
+            store,
+        }
+    }
     
 }
 </script>
