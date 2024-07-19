@@ -1,7 +1,15 @@
 
 <script>
+
+import { store } from '../store'
+
 export default {
-    name:'ContactUs'
+    name:'ContactUs',
+    data(){
+        return{
+            store,
+        }
+    }
     
 }
 </script>
@@ -19,45 +27,15 @@ export default {
         <!-- riferimenti per i contatti -->
         <div class="row container container-box py-4">
 
-            <div class="col px-2">
+            <div class="col px-2" v-for="(items, index) in store.contactReference" :key="index">
                 <div class="box-contact p-2 d-flex align-items-center">
                     <div class="box-icon d-flex justify-content-center align-items-center p-3">
-                            <i class="fa-solid fa-phone-volume"></i>
+                            <i :class="items.icon"></i>
                     </div>
                     <span>
                         <div class="text p-3">
-                            <h4>CALL US</h4>
-                            <small>02 90 222 333</small>
-                        </div>
-                    </span>
-                </div>
-                
-            </div>
-
-            <div class="col px-2">
-                <div class="box-contact p-2 d-flex align-items-center">
-                    <div class="box-icon d-flex justify-content-center align-items-center p-3">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <span>
-                        <div class="text p-3">
-                            <h4>EMAIL US</h4>
-                            <small>info@domain.com</small>
-                        </div>
-                    </span>
-                </div>
-                
-            </div>
-
-            <div class="col px-2">
-                <div class="box-contact p-2 d-flex align-items-center">
-                    <div class="box-icon d-flex justify-content-center align-items-center p-3">
-                            <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <span>
-                        <div class="text p-3">
-                            <h4>POSITION US</h4>
-                            <small>3308 Fleming Street</small>
+                            <h4>{{ items.text }}</h4>
+                            <small>{{ items.reference }}</small>
                         </div>
                     </span>
                 </div>
