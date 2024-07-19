@@ -94,12 +94,12 @@ export default{
         autoplayDelay: 3000 // tempo in millisecondi tra ogni scorrimento automatico
         }
     },
-    // mounted() {
-    //     this.startAutoplay();
-    // },
-    // beforeDestroy() {
-    //     this.stopAutoplay();
-    // },
+    mounted() {
+        this.startAutoplay();
+    },
+    beforeDestroy() {
+        this.stopAutoplay();
+    },
     methods: {
         startAutoplay() {
             this.autoplayInterval = setInterval(() => {
