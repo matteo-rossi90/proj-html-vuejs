@@ -6,7 +6,7 @@ export default {
 
 <template>
 <!-- header -->
-<div class="headerAboutUs d-flex justify-content-center align-items-center"><h3 class="fw-bold white">ABOUT US</h3></div>
+<div class="headerAboutUs d-flex justify-content-center align-items-center"><h2 class="fw-bold white">About Us</h2></div>
 <!-- content -->
 <div class="container py-5">
     <h3 class="fw-bold">ABOUT ANIME TECH</h3>
@@ -106,7 +106,7 @@ export default {
                             <img class="member rounded-circle" src="../../public/imgs/assets/team-member.webp" alt="team member">
                             <!-- hover -->
                             <div class= "hoverImg">
-                                <div class="white d-flex  justify-content-between  align-items-center w-100 px-5">
+                                <div class="d-flex  justify-content-between  align-items-center w-100 px-5 white">
                                     <i class="fa-brands fa-facebook-f"></i>
                                     <i class="fa-brands fa-x-twitter"></i>
                                     <i class="fa-brands fa-instagram"></i>
@@ -210,12 +210,14 @@ export default {
 
 .headerAboutUs {
     background-image: url(../../public/imgs/assets/300x250.webp);
-    height: 17rem;
+    height: 200px;
     width: 100%;
     background-size: cover;
     background-position-x: center;
-    background-position-y: 53%;
+    background-position-y: 50%;
     background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/imgs/assets/300x250.webp); 
+    
 }
 
 .container{
@@ -239,7 +241,6 @@ img.member{
 .white {
     color:white;
 }
-
 // hover
 .boxHover{
     position:relative,
@@ -252,6 +253,8 @@ img.member{
     position: absolute;
     border-radius: 50%;
     transition: 3s ease;
+    color:white;
+    cursor:pointer;
 }
 
 .boxHover:hover .hoverImg {
