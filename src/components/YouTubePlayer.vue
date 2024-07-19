@@ -38,11 +38,12 @@ export default{
                 <!-- body lista player -->
                 <div id="player-body" class="overflow-y-auto">
                     <!-- card video -->
-                    <div class="col-12 d-flex align-items-center player-card clickable" v-for="(video, index) in store.videoArray" :key="video.id" @click="store.activeVideo = index">
+                    <div class="col-12 d-flex align-items-center player-card clickable" v-for="(video, index) in store.videoArray" :key="video.id" @click="store.activeVideo = index" :class="{ active: store.activeVideo === index }">
                         <!-- numero video -->
                         <div class="col-1">
                             <div class="vd-number text-center ms-1">
-                                {{ video.id }}
+                                <span v-if="store.activeVideo === index"><i class="fa-solid fa-play"></i></span>
+                                <span v-else>{{ video.id }}</span>
                             </div>
                         </div>
                         <!-- thumbnail video -->
@@ -73,6 +74,14 @@ export default{
         height: 100px;
         background-color: $tertiary-color;
         border-bottom: 1px solid $quaternary-color;
+        &:hover{
+                color: $primary-color;
+
+                .vd-number{
+                    background-color: $primary-color;
+                }
+            }
+
 
         &:last-child{
             border-bottom: none;
@@ -84,6 +93,7 @@ export default{
             border-radius: 5px;
             height: 30px;
             width: 30px;
+            line-height: 28px;
         }
 
         .vd-thumb{
@@ -91,12 +101,6 @@ export default{
                 width: 80%;
                 border-radius: 15px;
                 margin: 0 10px;
-            }
-        }
-
-        .vd-title{
-            span{
-                color: $primary-color;
             }
         }
     }
@@ -115,6 +119,14 @@ export default{
 
     #player-body{
         height: 460px;
+
+        .active{
+            color: $primary-color;
+
+            .vd-number{
+                background-color: $primary-color;
+            }
+        }
     }
 }
 
