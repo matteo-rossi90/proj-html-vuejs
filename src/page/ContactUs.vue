@@ -65,32 +65,27 @@ export default {
 
                     <!-- Nome -->
                     <div class="col-md-6 pe-2 mb-3">
-                        <label for="inputName" class="form-label">Name</label>
-                        <input type="email" class="form-control border-top-0" id="inputEmail4">
+                        <input type="email" class="form-control border-properties" placeholder="Name" id="inputEmail4">
                     </div>
 
                     <!-- Cognome -->
                     <div class="col-md-6 mb-3">
-                        <label for="inputLastName" class="form-label">Last name</label>
-                        <input type="email" class="form-control border-top-0" id="inputLastName">
+                        <input type="email" class="form-control border-properties" placeholder="Email" id="inputLastName">
                     </div>
 
                     <!-- mail -->
                     <div class="col-md-6 pe-2 mb-3">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control border-top-0" id="inputEmail4">
+                        <input type="email" class="form-control border-properties" placeholder="Email" id="inputEmail4">
                     </div>
 
                     <!-- telefono -->
                     <div class="col-md-6 mb-3">
-                        <label for="inputPhone" class="form-label">Phone</label>
-                        <input type="Phone" class="form-control border-top-0" id="inputPhone">
+                        <input type="Phone" class="form-control border-properties" placeholder="Phone" id="inputPhone">
                     </div>
 
                     <!-- messaggio di testo -->
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control border-top-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control border-properties" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
                     </div>
 
                     <!-- pulsante per l'invio delle informazioni -->
@@ -180,6 +175,12 @@ export default {
         max-width: 100%;
         border-radius: 5px;
     }
+}
+
+.border-properties{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
     
