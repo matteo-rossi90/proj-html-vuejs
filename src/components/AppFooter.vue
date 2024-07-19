@@ -134,7 +134,7 @@ export default {
                     <img src="../../public/imgs/assets/anime-whitelogo-300x89.png" alt="">
                 </div>
                 <div class="col-3">
-                    <span><i class="fa-regular fa-copyright"></i> Anime Tech, Theme by HasnainDEV</span>
+                    <span> <i class="fa-solid fa-copyright"></i> Anime Tech, Theme by HasnainDEV</span>
                 </div> 
             </div>
         </div>
