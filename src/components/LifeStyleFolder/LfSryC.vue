@@ -6,7 +6,7 @@ export default{
 
 <template>
     <!-- contenitore card -->
-    <div id="life-stories" class="container d-flex">
+    <div id="life-stories" class="container d-flex p-0">
 
     <!-- contenitore img grande -->
     <div class="col-7 card-btn">
