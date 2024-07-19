@@ -74,7 +74,7 @@ export default {
     </section>
     <!-- banner logo e pubblicità -->
     <section id="middle-banner" class="container-fluid row align-items-center">
-      <div class="offset-1 col-4">
+      <div class="offset-1 col-4 p-0">
         <a href="#">
           <img src="/imgs/assets/anime-logo.webp" alt="logo">
         </a>
