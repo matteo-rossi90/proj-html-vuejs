@@ -135,7 +135,7 @@ export default {
 }
 
 .featuredTitle {
-    width: 82%;
+    width: 95%;
     margin: 0 auto;
     font-weight: bolder;
 }
@@ -153,7 +153,7 @@ button:hover {
 .angleBox {
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     gap: 1rem;
     padding-bottom: 1rem;
@@ -173,7 +173,7 @@ button:hover {
 
 .slidesBox {
     overflow: hidden;
-    width: 82%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -187,7 +187,7 @@ button:hover {
 
 img {
     border-radius: 8px 8px 0 0;
-    width: 21.5rem;
+    width: 25rem;
 }
 
 // font size 
