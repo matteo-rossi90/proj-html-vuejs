@@ -192,6 +192,10 @@ header {
         margin-left: 15px;
         cursor: pointer;
         font-size: 20px;
+        transition: all 0.2s ease;
+        &:hover{
+          color: $quaternary-color;
+        }
       }
 
       .link{
@@ -208,14 +212,14 @@ header {
             &:hover{
                 color: $quaternary-color;
             }
-            @keyframes typing { 
-                0% { 
-                    width: 0% 
-                } 
-                100% { 
-                    width: 50% 
-                } 
-            } 
+            // @keyframes typing { 
+            //     0% { 
+            //         width: 0% 
+            //     } 
+            //     100% { 
+            //         width: 50% 
+            //     } 
+            // } 
           }
       }
     }
@@ -223,12 +227,19 @@ header {
     #social {
       .social-i-container {
         background-color: white;
+        color: $primary-color;
         border-radius: 50%;
         text-align: center;
         width: 27px;
         height: 27px;
         position: relative;
         margin: 0 2px;
+        transition: all 0.2s ease;
+        &:hover{
+          background-color: $quaternary-color;
+          color: white;
+        }
+
       }
 
       i {
@@ -236,7 +247,6 @@ header {
         top: 50%;
         left: 50%;
         translate: -50% -50%;
-        color: $primary-color;
         font-size: 15px;
       }
     }
@@ -290,15 +300,20 @@ header {
 
         #social-canvas .social-i-container {
           background-color: $primary-color;
+          color: white;
           margin: 0 5px;
           border-radius: 50%;
           width: 35px;
           height: 35px;
           display: inline-block;
           position: relative;
+          transition: all 0.2s ease;
+          &:hover{
+          background-color: $quaternary-color;
+          color: white;
+          }
 
           i {
-            color: white;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -323,6 +338,7 @@ header {
       color: black;
       text-transform: uppercase;
       font-weight: 600;
+      transition: all 0.2s ease;
 
       &:hover {
         color: $primary-color;
