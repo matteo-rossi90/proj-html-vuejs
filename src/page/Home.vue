@@ -8,7 +8,7 @@ export default {
         Portfolio,
         lifestyle3,
         Cards,
-        LifestyleStories
+        LifestyleStoriesContainer
     }
 };
 
@@ -22,7 +22,7 @@ import lifestyle3 from '../components/lifestyle3.vue';
 
 import Cards from '../components/Cards.vue';
 
-import LifestyleStories from '../components/LifestyleStories.vue';
+import LifestyleStoriesContainer from '../components/LifestyleStoriesContainer.vue';
 
 </script>
 
@@ -32,7 +32,7 @@ import LifestyleStories from '../components/LifestyleStories.vue';
 </section>
     <Portfolio/>
 
-    <LifestyleStories/>
+    <LifestyleStoriesContainer/>
 <section id="lifestyle3">
     <lifestyle3/>
 </section>
