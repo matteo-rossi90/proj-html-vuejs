@@ -142,5 +142,5 @@ export const store = reactive({
             reference: '3308 Fleming Street',
             icon: 'fa-solid fa-location-dot'
         }
-    ]
+    ],
 });
