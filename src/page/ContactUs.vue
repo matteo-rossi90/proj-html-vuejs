@@ -17,7 +17,7 @@ export default {
         </div>
            
         <!-- riferimenti per i contatti -->
-        <div class="row container-fluid container-box py-4">
+        <div class="row container container-box py-4">
 
             <div class="col px-2">
                 <div class="box-contact p-2 d-flex align-items-center">
@@ -71,7 +71,7 @@ export default {
 
     <!-- sezione relativa al form -->
     <section>
-        <div class="row container-fluid container-box my-5">
+        <div class="row container container-box my-5">
 
             
             <div class="col-7">
@@ -88,31 +88,31 @@ export default {
                     <!-- Nome -->
                     <div class="col-md-6 pe-2 mb-3">
                         <label for="inputName" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="email" class="form-control border-top-0" id="inputEmail4">
                     </div>
 
                     <!-- Cognome -->
                     <div class="col-md-6 mb-3">
                         <label for="inputLastName" class="form-label">Last name</label>
-                        <input type="email" class="form-control" id="inputLastName">
+                        <input type="email" class="form-control border-top-0" id="inputLastName">
                     </div>
 
                     <!-- mail -->
                     <div class="col-md-6 pe-2 mb-3">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="email" class="form-control border-top-0" id="inputEmail4">
                     </div>
 
                     <!-- telefono -->
                     <div class="col-md-6 mb-3">
                         <label for="inputPhone" class="form-label">Phone</label>
-                        <input type="Phone" class="form-control" id="inputPhone">
+                        <input type="Phone" class="form-control border-top-0" id="inputPhone">
                     </div>
 
                     <!-- messaggio di testo -->
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control border-top-0" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
 
                     <!-- pulsante per l'invio delle informazioni -->
@@ -160,7 +160,6 @@ export default {
 
 .container-box{
     margin: 0 auto;
-    width: 80%;
 
 }
 
