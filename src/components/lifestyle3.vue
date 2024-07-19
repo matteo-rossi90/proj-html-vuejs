@@ -13,13 +13,13 @@ export default {
                     image: '../../public/imgs/assets/best-places.webp',
                     data: 'December 25, 2024',
                     title: 'Places for a Rode Trip',
-                    text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
+                    text: 'Marvel\'s Avengers is an epic, third-person.',
                 },
                 {
                     image: '../../public/imgs/assets/music-love.webp',
                     data: 'December 25, 2024',
                     title: 'Music the Love of my Life',
-                    text: 'Love of my life, you have hurt me, You have broken my heart, and now you leave me. Love of my life, can not you see?. Bring it back bring it back',
+                    text: 'Love of my life, you have hurt me.',
                 }, {
                     image: '../../public/imgs/assets/anime-fashion.webp',
                     data: 'December 25, 2024',
@@ -29,7 +29,7 @@ export default {
                     image: '../../public/imgs/assets/winter.webp',
                     data: 'December 25, 2024',
                     title: 'The Best Winter Outfits',
-                    text: "Grab all of your friends and drop incredible winter outfits!",
+                    text: "Grab all of your friends.!",
                 }, {
                     image: '../../public/imgs/assets/photographers-mistakes.webp',
                     data: 'December 25, 2024',
@@ -39,17 +39,17 @@ export default {
                     image: '../../public/imgs/assets/ideas-anime.webp',
                     data: 'December 25, 2024',
                     title: 'Live ideas you Might be Anime',
-                    text: 'あなたのアイデアを素晴らしいアニメ作品に変えよう.',
+                    text: 'あなたのアイデアを素晴らし.',
                 }, {
                     image: '../../public/imgs/assets/visit-france.webp',
                     data: 'December 25, 2024',
                     title: 'Reason to visit France',
-                    text: 'Les rêves des amoureux sont comme le bon vin. Ils donnent de la joie ou bien du chagrin. Affaibli par la faim je suis malheureux. Volant en chemin tout ce que je peux. Car rien n est gratuit dans la vie.',
+                    text: 'Les rêves des amoureux sont comme le bon vin.',
                 },{
                     image: '../../public/imgs/assets/travel-alone.webp',
                     data: 'December 25, 2024',
                     title: 'Travelling Alone is Awesome',
-                    text: 'All this walking, Now paralyzes me, The journey of life, With nowhere to go..',
+                    text: 'All this walking, Now paralyzes me.',
                 },{
                     image: '../../public/imgs/assets/success-story.webp',
                     data: 'December 25, 2024',
@@ -95,15 +95,15 @@ export default {
             <SplideSlide class="cardBox position-relative" v-for="(slide, index) in slides" :key="index">
                 <img :src="slide.image" :alt="slide.title">
                 <div class="buttonBox d-flex justify-content-between gap-3">
-                <button type="button" class="btn btn-secondary btn-sm">Lifestyle</button>
-                <button type="button" class="btn btn-primary btn-sm">Stories</button>
+                <button type="button" class="btn btn-sm btn-light fw-bold" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Lifestyle</button>
+                <button type="button" class="btn btn-sm btn-light fw-bold" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Stories</button>
                 </div>
                 <div class="captionBox d-flex justfy-content-center flex-column align-items-center gap-2 p-3">
                     <h3 class="size-12">{{ slide.title }}</h3>
                     <p>{{ slide.data }}</p>
                     <p>{{ slide.text }}</p>
                 </div>
-                <button type="button" class="btn btn-danger">Read More</button>
+                 <button type="button" class="btn btn-danger btn-outline-light rounded-pill fw-bold">Read More</button>
             </SplideSlide> 
         </Splide>
         <!-- chiudere entrambi i tag -->
@@ -135,6 +135,10 @@ export default {
     position:absolute;
     margin: 0 8rem;
     top: 1rem;
+}
+
+button:hover {
+    color: #bf1d2e;
 }
 
 .angleBox {
@@ -169,7 +173,7 @@ export default {
     border-radius: 8px;
     text-align: center;
     width: 25rem;
-    height: 34rem;
+    height: 30rem;
 }
 
 img {
@@ -177,9 +181,6 @@ img {
     width: 25rem;
 }
 
-.captionBox {
-    min-height: 14.5rem;
-}
 // font size 
 .size-12{
     font-size: 18px;
