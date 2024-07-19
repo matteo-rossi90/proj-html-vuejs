@@ -58,9 +58,9 @@ export default {
 
 <template>
 
-<section id="portfolio2">
+<section id="portfolio2" class="container">
     <!-- portfolio immagini -->
-    <div class="row container-box py-4">
+    <div class="row py-4">
 
       <!-- Colonna sinistra -->
       <div class="col-3 py-1 px-1" v-for="(column, colIndex) in columns" :key="'left-' + colIndex">
@@ -166,12 +166,6 @@ export default {
     h5{
       font-size: 17px;
       font-weight: 700;
-    }
-
-    .container-box{
-        width: 80%;
-        margin: 0 auto;
-
     }
 
     #box-image-center{
