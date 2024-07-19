@@ -163,4 +163,22 @@ export const store = reactive({
             title: 'Fashion trend now a days',
         }
     ],
+    //riferimenti di contact US
+    contactReference:[
+        {
+            text: 'CALL US',
+            reference: '02 90 222 333',
+            icon: 'fa-solid fa-phone-volume'
+        },
+        {
+            text: 'EMAIL US',
+            reference: 'info@domain.com',
+            icon: 'fa-solid fa-envelope'
+        },
+        {
+            text: 'VISIT US',
+            reference: '3308 Fleming Street',
+            icon: 'fa-solid fa-location-dot'
+        }
+    ]
 });
