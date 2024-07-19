@@ -181,7 +181,7 @@ button:hover {
     background-color: #F3F3F3;
     border-radius: 8px;
     text-align: center;
-    width: 25rem;
+    width: 21.5rem;
     height: 30rem;
 }
 
