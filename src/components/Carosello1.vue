@@ -91,7 +91,7 @@ export default{
         },
         ],
         autoplayInterval: null,
-        autoplayDelay: 3000000 // tempo in millisecondi tra ogni scorrimento automatico
+        autoplayDelay: 3000 // tempo in millisecondi tra ogni scorrimento automatico
         }
     },
     mounted() {
