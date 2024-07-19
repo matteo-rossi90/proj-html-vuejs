@@ -138,12 +138,12 @@ export const store = reactive({
             title: 'Traveling alone is awesome',
         },
         {
-            img: '/img/assets/ideas-anime.webp',
+            img: '/imgs/assets/ideas-anime.webp',
             button: 'Culture',
             title: 'Live Ideas you might be anime',
         },
         {
-            img: '/img/assets/best-places.webp',
+            img: '/imgs/assets/best-places.webp',
             button: 'Lifestyle',
             title: 'Places for a road trip',
         },

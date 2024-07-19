@@ -109,12 +109,19 @@ export default{
 
 <template>
     <div class="container-fluid">
+         
+        <!-- Cards -->
         <div class="row d-flex flex-nowrap relative"> 
-            <div class="col-3 card car_card " v-for="element in cardCarosel1" :key="element.id">
-                <img :src="element.image" class="card-img-top " alt="...">
+            <div class="col-3 card car_card "  v-for="element in cardCarosel1" :key="element.id">
+                <img :src="element.image" class="card-img-top " alt="img">
                 <div class="card-body text-center">
                     <h5>{{element.title}}</h5>
                     <p>{{element.dateEvent}}</p>
+                    <!-- Link buttons -->
+                <div>
+                    <a href="#" class="btn mt-3 position-absolute top-0  bt-style left-bt ">Lifestyle</a>
+                    <a href="#" class="btn mt-3 position-absolute top-0  bt-style right-bt">Culture</a>
+                </div>
                 </div>
             </div>
             <!-- cursor prev -->
@@ -136,10 +143,34 @@ export default{
 @use 'src/style/partials/_mixins.scss' as *;
 .container-fluid {
     overflow: hidden;
-}
+    //dato la position relative alla row dove si trovano le card
     .relative{
         position: relative;
+        //costumizzazione le card di bootstrap
+        .card{
+            margin: 0.2rem; 
+            padding: 0; 
+            width: 23.3rem;
+        }
+        // costumizzazione i bottoni sopra le immagini 
+        .left-bt {
+            left: 6.5rem;
+        }
+        .right-bt {
+            right: 6.5rem;
+        }
+        .bt-style{
+            --bs-btn-padding-x: 0.7rem;
+            --bs-btn-padding-y: 0.1rem;
+            background-color: $secondary-color;
+            color: black ;
+                &:hover{
+                    background-color: $secondary-color;
+                    color:$primary-color;
+                }
+        }
     }
+    // costumizzazione dei cursori di scorrimento 
     .icon{
         font-size: 30px;
         background-color: $primary-color;
@@ -149,16 +180,18 @@ export default{
             color: $primary-color ;
         }
     }
-        #prev_cursor,  #next_cursor{
-            color: $secondary-color;
-            position: absolute;
-            top: 40%;
-            left: 0;
-                
-        }
-        #next_cursor{
-            left: 95%;
-        }
+
+    #prev_cursor,  #next_cursor{
+        color: $secondary-color;
+        position: absolute;
+        top: 40%;
+        left: 0;
+            
+    }
+    #next_cursor{
+        left: 95%;
+    }
+}
 </style>
 
 

@@ -18,12 +18,23 @@ export default{
 
 <section class="my-5">
     <!-- titolo e bottoni di navigazione -->
-    <div class="col-12 container d-flex mb-3">
+    <div id="section-title" class="col-12 container d-flex mb-3">
         <div class="col-6">
             <h3>Lifestyle & Stories</h3>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 text-end">
+            <div class="btn">
+                all
+            </div>
+
+            <div class="btn">
+                lifestyle
+            </div>
+
+            <div class="btn">
+                stories
+            </div>
 
         </div>
     </div>
@@ -64,6 +75,56 @@ export default{
                      </div>
                 </div>
             </div>
+            <hr>
+            <div class="card-small d-flex px-3">
+                <!-- immagine piccola -->
+                <div class="col-5 card-btn">
+                    <img src="/imgs/assets/ideas-anime.webp" alt="">
+                    <div class="btn">
+                        Culture
+                    </div>
+                </div>
+                <!-- dettagli -->
+                <div class="col-7 d-flex flex-column justify-content-center ms-3">
+                    <!-- dettagli grigio chiaro -->
+                    <div class="light-gray">
+                        <i class="fa-solid fa-user"></i>
+                        <span>demo</span>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>December 26, 2022</span>
+                    </div>
+                    <!-- titolo card -->
+                     <div>
+                        <h6>Live Ideas you might be anime</h6>
+                     </div>
+                </div>
+            </div>
+            <hr>
+            <div class="card-small d-flex px-3">
+                <!-- immagine piccola -->
+                <div class="col-5 card-btn">
+                    <img src="/imgs/assets/best-places.webp" alt="">
+                    <div class="btn">
+                        Lifestyle
+                    </div>
+                </div>
+                <!-- dettagli -->
+                <div class="col-7 d-flex flex-column justify-content-center ms-3">
+                    <!-- dettagli grigio chiaro -->
+                    <div class="light-gray">
+                        <i class="fa-solid fa-user"></i>
+                        <span>demo</span>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>December 26, 2022</span>
+                    </div>
+                    <!-- titolo card -->
+                     <div>
+                        <h6>Places for a road trip</h6>
+                     </div>
+                </div>
+            </div>
+
+
         </div>
 
     </div>
@@ -75,10 +136,21 @@ export default{
 <style lang="scss" scoped>
 @use 'src/style/partials/_variables.scss' as *;
 
-h3{
-    font-size: 1.75rem;
-    font-weight: bolder;
-    text-transform: uppercase;
+#section-title{
+    h3{
+        font-size: 1.75rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+
+    .btn{
+        background-color: #545454;
+        text-transform: uppercase;
+        color: white;
+        margin-left: 20px;
+    }
+
+
 }
 
 h6{
@@ -118,9 +190,7 @@ h6{
 .card-small_container{
 
     .card-small{
-        height: calc(100% / 3 - 10px);
-        // debug
-        background-color: aqua;
+        height: calc(100% / 3 - 25px);
 
         .light-gray{
             color: #545454;
