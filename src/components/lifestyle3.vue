@@ -130,12 +130,12 @@ export default {
 }
 
 #bannerLifestyle3 {
-    width: 78rem;
+    width: 83rem;
     border-radius: 10px;
 }
 
 .featuredTitle {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     font-weight: bolder;
 }
@@ -153,7 +153,7 @@ button:hover {
 .angleBox {
     display: flex;
     justify-content: flex-end;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     gap: 1rem;
     padding-bottom: 1rem;
@@ -173,7 +173,7 @@ button:hover {
 
 .slidesBox {
     overflow: hidden;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -187,7 +187,7 @@ button:hover {
 
 img {
     border-radius: 8px 8px 0 0;
-    width: 25rem;
+    width: 26rem;
 }
 
 // font size 
