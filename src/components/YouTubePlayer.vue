@@ -65,11 +65,7 @@ export default{
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
 
-#yt-player{
-    .clickable{
-            cursor: pointer;
-        }
-
+#yt-player{    
     .player-card{
         height: 100px;
         background-color: $tertiary-color;

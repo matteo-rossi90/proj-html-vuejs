@@ -41,9 +41,9 @@ export default{
 
 <template>
 
-<section class="my-5">
+<section class="my-5 container p-0">
     <!-- titolo e bottoni di navigazione -->
-    <div id="section-title" class="col-12 container d-flex mb-3">
+    <div id="section-title" class="row mb-3">
         <div class="col-6">
             <h3>Lifestyle & Stories</h3>
         </div>
@@ -112,7 +112,7 @@ export default{
     left: 10px;
     background: white;
     height: 510px;
-    width: 1300px;
+    width: 1325px;
     z-index: 900;
     filter: opacity(0.4);
 }
