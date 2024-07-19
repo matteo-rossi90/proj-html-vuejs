@@ -9,73 +9,141 @@ export default{
             id: 1,
             image:'../../public/imgs/assets/rice-ball.webp',
             title:'Hygenic Recepe To Prepare Rice',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Food'
+                }
+                },
         },
         {   
             id: 2,
             image:'../../public/imgs/assets/meal-time-150x150.webp',
             title:'The Best Time To Have A Meal',
-            dateEvent: 'December 26, 2022 No Comments'
-        },
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Food'
+                }
+                },
+            },
         {
             id: 3,
             image:'../../public/imgs/assets/healthy-foods.webp',
             title:'The Best Healthy Foods',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Food'
+                }
+                },
         },
         {
             id: 4,
             image:'../../public/imgs/assets/winter.webp',
             title:'The Best Winter Outfit',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Fashion'
+                }
+                },
         },
         {
             id: 5,
             image:'../../public/imgs/assets/photographers-mistakes.webp',
             title:'Begginer Photographer s Mistakes',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Fashion'
+                }
+                },
         },
         {
             id: 6,
             image:'../../public/imgs/assets/ideas-anime.webp',
             title:'Live Ideas You Might Be Anime',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Cultures',
+                    '2':'Stories'
+                }
+                },
         },
         {
             id: 7,
             image:'../../public/imgs/assets/visit-france.webp',
             title:'Reasons To Visit France',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+                link:{
+                textLink: {
+                    '1':'Lifesyle',
+                    '2':'Travel'
+                }
+                },
         },
         {
             id: 8,
             image:'../../public/imgs/assets/travel-alone-300x200.webp',
             title:'Traveling Alone Is Awsome',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Stories',
+                    '2':'Travel'
+                }
+                },
         },
         {
             id: 9,
             image:'../../public/imgs/assets/success-story.webp',
             title:'The Best Success Stories',
-            dateEvent: 'December 26, 2022 No Comments'
+            dateEvent: 'December 26, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Cultures',
+                    '2':'Stories'
+                }
+                },
         },
         {
             id: 10,
             image:'../../public/imgs/assets/best-places.webp',
             title:'Place Fora A Road Trip',
-            dateEvent: 'December 25, 2022 No Comments'
+            dateEvent: 'December 25, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Lifestyle',
+                    '1':'Stories',
+                    '2':'Travel'
+                }
+                },
         },
         {
             id: 11,
             image:'../../public/imgs/assets/music-love.webp',
             title:'Music The Love Of My Life',
-            dateEvent: 'December 25, 2022 No Comments'
+            dateEvent: 'December 25, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Cultures',
+                    '2':'Lifestyle'
+                }
+                },
         },
         {
             id: 12,
             image:'../../public/imgs/assets/anime-fashion.webp',
             title:'Fashion Trend Now A Days',
-            dateEvent: 'December 25, 2022 No Comments'
+            dateEvent: 'December 25, 2022 No Comments',
+            link:{
+                textLink: {
+                    '1':'Fashion',
+                    '2':'Stories'
+                }
+                },
         },
         ],
         autoplayInterval: null,
@@ -118,8 +186,8 @@ export default{
                     <h5>{{element.title}}</h5>
                     <p>{{element.dateEvent}}</p>
                     <!-- Link buttons -->
-                <div>
-                    <a href="#" class="btn mt-3 position-absolute top-0  bt-style left-bt ">Lifestyle</a>
+                <div class="bottoni" v-for="(item, index) in element.link.textLink" :key="index">
+                    <a href="#" class="btn mt-3 position-absolute top-0  bt-style left-bt ">{{item}}</a>
                     <a href="#" class="btn mt-3 position-absolute top-0  bt-style right-bt">Culture</a>
                 </div>
                 </div>
