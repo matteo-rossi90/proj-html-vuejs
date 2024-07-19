@@ -11,47 +11,56 @@ export default {
             slides: [
                 {
                     image: '../../public/imgs/assets/best-places.webp',
+                    categories: ["Lifestyle", "Stories"],
                     data: 'December 25, 2024',
                     title: 'Places for a Rode Trip',
                     text: 'Marvel\'s Avengers is an epic, third-person.',
                 },
                 {
                     image: '../../public/imgs/assets/music-love.webp',
+                    categories: ["Culture", "Lifestyle"],
                     data: 'December 25, 2024',
                     title: 'Music the Love of my Life',
                     text: 'Love of my life, you have hurt me.',
                 }, {
                     image: '../../public/imgs/assets/anime-fashion.webp',
+                    categories: ["Fashion", "Lifestyle"],
                     data: 'December 25, 2024',
                     title: 'Fashion Trend now a Days',
                     text: 'Shine bright like a diamond',
                 }, {
                     image: '../../public/imgs/assets/winter.webp',
+                    categories: ["Fashion"],
                     data: 'December 25, 2024',
                     title: 'The Best Winter Outfits',
                     text: "Grab all of your friends.!",
                 }, {
                     image: '../../public/imgs/assets/photographers-mistakes.webp',
+                    categories: ["Fashion"],
                     data: 'December 25, 2024',
                     title: 'Beginner Photographer Mistake',
                     text: 'lights, camera, action!',
                 }, {
                     image: '../../public/imgs/assets/ideas-anime.webp',
+                    categories: ["Culture", "Stories"],
                     data: 'December 25, 2024',
                     title: 'Live ideas you Might be Anime',
                     text: 'あなたのアイデアを素晴らし.',
                 }, {
                     image: '../../public/imgs/assets/visit-france.webp',
+                    categories: ["Culture", "Lifestyle"],
                     data: 'December 25, 2024',
                     title: 'Reason to visit France',
                     text: 'Les rêves des amoureux sont comme le bon vin.',
                 },{
                     image: '../../public/imgs/assets/travel-alone.webp',
+                    categories: ["Travel", "Lifestyle"],
                     data: 'December 25, 2024',
                     title: 'Travelling Alone is Awesome',
                     text: 'All this walking, Now paralyzes me.',
                 },{
                     image: '../../public/imgs/assets/success-story.webp',
+                    categories: ["Stories", "Travel"],
                     data: 'December 25, 2024',
                     title: 'The Succes Stories',
                     text: 'Money money money money money.',
@@ -95,8 +104,8 @@ export default {
             <SplideSlide class="cardBox position-relative" v-for="(slide, index) in slides" :key="index">
                 <img :src="slide.image" :alt="slide.title">
                 <div class="buttonBox d-flex justify-content-between gap-3">
-                <button type="button" class="btn btn-sm btn-light fw-bold" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Lifestyle</button>
-                <button type="button" class="btn btn-sm btn-light fw-bold" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Stories</button>
+                <button type="button" v-for="category in slide.categories" :key="category" class="btn btn-sm btn-light fw-bold" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">{{ category }}</button>
+                <!-- <button type="button" class="btn btn-sm btn-light fw-bold" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Stories</button> -->
                 </div>
                 <div class="captionBox d-flex justfy-content-center flex-column align-items-center gap-2 p-3">
                     <h3 class="size-12">{{ slide.title }}</h3>
