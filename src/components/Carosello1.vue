@@ -130,8 +130,8 @@ export default{
                     <h5>{{element.title}}</h5>
                     <p>{{element.dateEvent}}</p>
                     <!-- Link buttons -->
-                    <div class="bottoni">
-                        <a v-for="(link, index) in element.textLink" :key="index" href="#" class="btn mt-3 position-absolute top-0 bt-style" :style="{ left: index * 7 + 'em' }">{{ link }}</a>
+                    <div class="bottoni position-absolute top-0 start-0">
+                        <a v-for="(link, index) in element.textLink" :key="index" href="#" class="btn mt-3 mx-3 bt-style ">{{ link }}</a>
                     </div>
                 </div>
             </div>
@@ -162,6 +162,10 @@ export default{
             margin: 0.2rem; 
             padding: 0; 
             width: 23.3rem;
+
+            .bottoni{
+                width: 371px;
+            }
         }
         .bt-style{
             padding: 0.3rem;
