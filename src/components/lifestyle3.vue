@@ -57,14 +57,14 @@ export default {
                     text: 'Money money money money money.',
                 }
             ],
-            splideOptions: { //add styles framework
-                type: 'loop', //add styles framework
-                perPage: 3, //add styles framework
-                gap: '1rem', //add styles framework
-                perMove: 1, //add styles framework
-                pagination: false, //add styles framework
-                arrows: false, //add styles framework
-                autoplay: true, //add styles framework
+            splideOptions: { //add styles module
+                type: 'loop', //add styles module
+                perPage: 3, //add styles module
+                gap: '1rem', //add styles module
+                perMove: 1, //add styles module
+                pagination: false, //add styles module
+                arrows: false, //add styles module
+                autoplay: true, //add styles module
             },
         }
     }
@@ -73,6 +73,10 @@ export default {
 </script>
 
 <template>
+    <div  class="bannerBox d-flex justify-content-center align-items-center">
+        <img id="bannerLifestyle3" src="../../public/imgs/assets/header-banner.webp" alt="banner">
+    </div>
+
     <section id="featured" >
         <!-- bottoni -->
         <span><h3 class="featuredTitle">FEATURED POSTS</h3></span>
@@ -107,6 +111,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+.bannerBox {
+    background-color: #F3F3F3;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+#bannerLifestyle3 {
+    width: 78rem;
+    border-radius: 10px;
+}
 
 .featuredTitle {
     width: 82%;
@@ -147,9 +164,8 @@ export default {
     margin: 0 auto;
 }
 
-
 .cardBox {
-    background-color: #e1e1e1;
+    background-color: #F3F3F3;
     border-radius: 8px;
     text-align: center;
     width: 25rem;
@@ -168,6 +184,5 @@ img {
 .size-12{
     font-size: 18px;
     font-weight: bolder;
-
 }
 </style>
