@@ -109,12 +109,19 @@ export default{
 
 <template>
     <div class="container-fluid">
+         
+        <!-- Cards -->
         <div class="row d-flex flex-nowrap relative"> 
             <div class="col-3 card car_card " v-for="element in cardCarosel1" :key="element.id">
                 <img :src="element.image" class="card-img-top " alt="...">
                 <div class="card-body text-center">
                     <h5>{{element.title}}</h5>
                     <p>{{element.dateEvent}}</p>
+                    <!-- Link buttons -->
+                <div class="d-flex justify-content-evenly">
+                    <a href="#" class="btn mt-3 position-absolute top-0 end-50 bt-style ">Lifestyle</a>
+                    <a href="#" class="btn mt-3 position-absolute top-0 start-50 bt-style">Culture</a>
+                </div>
                 </div>
             </div>
             <!-- cursor prev -->
@@ -148,6 +155,14 @@ export default{
             background-color: $secondary-color;
             color: $primary-color ;
         }
+    }
+    .bt-style{
+        background-color: $secondary-color;
+        color: black ;
+            &:hover{
+                background-color: $secondary-color;
+                color:$primary-color;
+            }
     }
         #prev_cursor,  #next_cursor{
             color: $secondary-color;
