@@ -1,5 +1,2 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Progetto AnimeTech. L'obiettivo del progetto consisteva nel replicare in Vue.js un sito vetrina di un ipotetico gestore di prodotti manga e anime giapponesi sviluppato in Wordpress.
+Del progetto ho realizzato la pagina web relativa ai contatti e il form necessario all'utente per contattare i gestori attraverso Vue.js, focalizzandomi sul modello.
